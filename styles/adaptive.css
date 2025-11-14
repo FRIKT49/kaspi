@@ -1,0 +1,23 @@
+
+@media screen and (max-width: 1140px) {
+    html{
+        width: 100%;
+    }
+    .mainWrap{
+        width: 100%;
+        margin: auto;
+    }
+    .topLineCont{
+        width: 100%;
+    }
+    .footerCont{
+        width: 100%;
+    }
+    .topMainWrap{
+        display: none;
+    }
+    .carousel{
+        width: 100%;
+    }
+    
+}

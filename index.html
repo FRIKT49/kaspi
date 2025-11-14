@@ -1,0 +1,1281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/adaptive.css">
+    <title>Document</title>
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/jquery.mask.min.js"></script>
+    <script src="./js/gsap.min.js"></script>
+    <script src="./js/CustomEase.min.js"></script>
+</head>
+<body>
+    <div class="topLine">
+        <div class="topLineCont">
+            <div class="logo">
+                <img src="img/logo.svg" alt="Kaspi Logo">
+                <div class="logoText">
+                    ПРОФЕССИОНАЛЬНАЯ<br>
+                    РАЗРАБОТКА САЙТОВ
+                </div>
+            </div>
+            <div class="topInfo">
+                <div class="contacts">
+                    <a href="#"><img src="./img/whatsapp.svg" alt=""></a>
+                    <a href="#"><img src="./img/phone.svg" alt=""></a>
+                </div>
+                <div class="contacts c2">
+                    <a href="#">+7 777 541 09 00</a>
+
+                </div>
+                <div class="city">
+                    <div class="city-select" id="citySelect" tabindex="0" aria-haspopup="listbox" aria-expanded="false">
+                        <span class="city-selected">Алматы</span>
+                        <button type="button" class="city-arrow" aria-hidden="true">▾</button>
+                        <ul class="city-list" role="listbox" aria-label="Cities" hidden>
+                            <li class="city-search"><input type="text" id="citySearch" placeholder="Поиск города..."></li>
+                            <li role="option" data-city="Алматы" class="city-item" tabindex="0">Алматы</li>
+                            <li role="option" data-city="Нур‑Султан" class="city-item" tabindex="0">Нур‑Султан</li>
+                            <li role="option" data-city="Шымкент" class="city-item" tabindex="0">Шымкент</li>
+                            <li role="option" data-city="Караганда" class="city-item" tabindex="0">Караганда</li>
+                            <li role="option" data-city="Актобе" class="city-item" tabindex="0">Актобе</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="menu">
+                    <span>МЕНЮ САЙТА</span>
+                </div>
+
+            </div>
+        </div>
+        
+    </div>
+    
+    <div class="main">
+        <div class="mainWrap">
+            <div class="topMain">
+                <div class="topMainLeft">
+                    <img src="./img/kaspiLogo.svg" alt="">
+                    <div style="margin-bottom: 20px !important;" class="topMainText  SF-bold">
+                        Интеграция сайта <br>
+                        с Kaspi магазином
+                    </div>
+                    <div class="topMainTextSmall SF-reg">
+                        Автоматизируйте продажи: ваш сайт и Kaspi работают как единая система, синхронизируя товары, цены и заказы в реальном времени
+                    </div>
+                    <form class="form-wrapper " onsubmit="return false;">
+                        <input type="tel" class="SF-reg phone" maxlength="18">
+                        <button type="submit" class="tel-button SF-reg">Получить консультацию</button>
+                    </form>
+                    <div class="topMainTextVerySmall SF-light">
+                        Нажимая кнопку «Получить консультацию» Вы соглашаетесь с политикой обработки персональных данных и правилами компании
+                    </div>
+                </div>
+                <div class="topMainWrap">
+                    <div class="tMW-bg">
+                        
+
+                    </div>
+                    <img src="./img/iphone.png" class="tMW-img iphone matrix">
+                    <img src="./img/qr.png" class="tMW-img qr matrix">
+                    <img src="./img/behind_laptop.png" class="tMW-img bl matrix">
+                    
+                    
+                    <div  class=" laptop "></div>
+                    <div class="hemisphere right">
+                        <img src="./img/grafic.png" class="tMW-img grafic matrix">
+                        <img src="./img/inter.png" class="tMW-img inter matrix">
+                    </div>
+                </div>
+            </div>
+            <div class="trio SF-reg">
+                <div class="trioElem changeElem">
+                    <div class="stemp">
+                        <svg class="stempImg" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M18.494 30.1158C17.6833 30.2585 16.85 30.3332 15.9993 30.3332C8.08868 30.3332 1.66602 23.9105 1.66602 15.9998C1.66602 8.08917 8.08868 1.6665 15.9993 1.6665C23.91 1.6665 30.3327 8.08917 30.3327 15.9998C30.3327 16.8505 30.258 17.6838 30.1153 18.4945C29.3453 17.4134 28.3279 16.5322 27.148 15.9243C25.9681 15.3163 24.66 14.9994 23.3327 14.9998C21.123 15.0013 19.0042 15.8797 17.4417 17.4422C15.8792 19.0047 15.0008 21.1235 14.9993 23.3332C14.9989 24.6605 15.3159 25.9686 15.9238 27.1485C16.5317 28.3284 17.4129 29.3458 18.494 30.1158ZM17.666 8.6665V15.3332C17.666 15.5985 17.5607 15.8532 17.3727 16.0398L12.0393 21.3732C11.9465 21.466 11.8364 21.5396 11.7151 21.5898C11.5939 21.64 11.4639 21.6659 11.3327 21.6659C11.2014 21.6659 11.0715 21.64 10.9502 21.5898C10.829 21.5396 10.7188 21.466 10.626 21.3732C10.5332 21.2804 10.4596 21.1702 10.4094 21.049C10.3592 20.9277 10.3333 20.7977 10.3333 20.6665C10.3333 20.5353 10.3592 20.4053 10.4094 20.2841C10.4596 20.1628 10.5332 20.0526 10.626 19.9598L15.666 14.9185V8.6665C15.666 8.40129 15.7714 8.14693 15.9589 7.9594C16.1464 7.77186 16.4008 7.6665 16.666 7.6665C16.9312 7.6665 17.1856 7.77186 17.3731 7.9594C17.5607 8.14693 17.666 8.40129 17.666 8.6665Z" fill="#ffffffff"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M23.332 16.333C19.468 16.333 16.332 19.469 16.332 23.333C16.332 27.197 19.468 30.333 23.332 30.333C27.196 30.333 30.332 27.197 30.332 23.333C30.332 19.469 27.196 16.333 23.332 16.333ZM19.9587 23.7063L21.9587 25.7063C22.0515 25.7992 22.1616 25.8729 22.2829 25.9232C22.4041 25.9735 22.5341 25.9993 22.6654 25.9993C22.7966 25.9993 22.9266 25.9735 23.0479 25.9232C23.1691 25.8729 23.2793 25.7992 23.372 25.7063L26.7054 22.373C26.7982 22.2802 26.8718 22.17 26.922 22.0488C26.9722 21.9275 26.9981 21.7976 26.9981 21.6663C26.9981 21.5351 26.9722 21.4051 26.922 21.2839C26.8718 21.1626 26.7982 21.0525 26.7054 20.9597C26.6126 20.8669 26.5024 20.7933 26.3811 20.743C26.2599 20.6928 26.1299 20.667 25.9987 20.667C25.8675 20.667 25.7375 20.6928 25.6163 20.743C25.495 20.7933 25.3848 20.8669 25.292 20.9597L22.6654 23.585L21.372 22.293C21.2792 22.2002 21.1691 22.1266 21.0478 22.0764C20.9266 22.0261 20.7966 22.0003 20.6654 22.0003C20.5341 22.0003 20.4042 22.0261 20.2829 22.0764C20.1617 22.1266 20.0515 22.2002 19.9587 22.293C19.8659 22.3858 19.7923 22.496 19.7421 22.6172C19.6918 22.7385 19.666 22.8684 19.666 22.9997C19.666 23.1309 19.6918 23.2609 19.7421 23.3821C19.7923 23.5034 19.8659 23.6135 19.9587 23.7063Z" fill="#ffffffff"/>
+                        </svg>
+                    </div>
+                    <div class="trioElemh1 changeText ">Экономия времени</div>
+                    <div class="trioElemp changeText">
+                        Забудьте о ручной выгрузке — товары, цены и остатки обновляются автоматически между сайтом и Kaspi.
+                    </div>
+                </div>
+                <div class="trioElem changeElem">
+                    <div class="stemp">
+                        <svg class="stempImg" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M18.986 5.62204C15.223 11.17 8.248 12.969 8.248 12.969C7.99101 13.0348 7.71841 12.9958 7.49018 12.8606C7.37717 12.7936 7.27845 12.7051 7.19967 12.6C7.12088 12.4949 7.06357 12.3753 7.031 12.248C6.99843 12.1208 6.99125 11.9884 7.00986 11.8583C7.02846 11.7283 7.0725 11.6032 7.13945 11.4902C7.27466 11.262 7.49501 11.0968 7.752 11.031C7.752 11.031 14.394 9.34804 17.641 4.01704L15.674 4.00004C15.4088 3.99765 15.1554 3.89001 14.9695 3.70078C14.7837 3.51156 14.6806 3.25626 14.683 2.99104C14.6854 2.72582 14.793 2.47242 14.9823 2.28657C15.1715 2.10072 15.4268 1.99765 15.692 2.00004L19.972 2.03804C20.2343 2.03987 20.4853 2.14487 20.6707 2.33032C20.8562 2.51578 20.9612 2.76678 20.963 3.02904L21 7.21004C21.0024 7.47526 20.8993 7.73056 20.7135 7.91978C20.5276 8.10901 20.2742 8.21665 20.009 8.21904C19.7438 8.22143 19.4885 8.11836 19.2993 7.93251C19.11 7.74666 19.0024 7.49326 19 7.22804L18.986 5.62204ZM10.485 30H6C5.46957 30 4.96086 29.7893 4.58579 29.4143C4.21071 29.0392 4 28.5305 4 28V19C4 18.4696 4.21071 17.9609 4.58579 17.5858C4.96086 17.2108 5.46957 17 6 17H10.485V30ZM12.485 16.035C12.485 14.911 13.396 14 14.52 14H17.397C18.521 14 19.432 14.911 19.432 16.035V30H12.485V16.035ZM21.432 12.035C21.432 10.911 22.343 10 23.466 10H26C26.5304 10 27.0391 10.2108 27.4142 10.5858C27.7893 10.9609 28 11.4696 28 12V28C28 28.5305 27.7893 29.0392 27.4142 29.4143C27.0391 29.7893 26.5304 30 26 30H21.432V12.035Z" fill="white"/>
+                        </svg>
+
+                    </div>
+                    <div class="trioElemh1 changeText">Больше продаж</div>
+                    <div class="trioElemp changeText">
+                        Ваш сайт и Kaspi работают синхронно, что позволяет охватить больше клиентов и увеличить конверсию.                    
+                    </div>
+                </div>
+                <div class="trioElem changeElem">
+                    <div class="stemp">
+                        <svg class="stempImg" width="32" height="29" viewBox="0 0 32 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M23.4375 6.00098V8.49985H25.9364C25.6054 7.28791 24.6494 6.33191 23.4375 6.00098Z" fill="white"/>
+                            <path d="M29.1875 0H2.8125C1.26169 0 0 1.26169 0 2.8125V19.5625C0 21.1133 1.26169 22.375 2.8125 22.375H29.1875C30.7383 22.375 32 21.1133 32 19.5625V2.8125C32 1.26169 30.7383 0 29.1875 0ZM5.59438 14.1625C4.96031 14.6629 4.0625 14.2197 4.0625 13.4375C4.0625 12.8998 4.52338 12.4521 5.0925 12.5043C5.92 12.5919 6.239 13.6189 5.59438 14.1625ZM5.9325 9.52938C5.89219 10.0232 5.43144 10.4233 4.9075 10.37C4.41069 10.3286 4.01294 9.867 4.0675 9.34556C4.10869 8.83631 4.60094 8.40912 5.18313 8.51812C5.67606 8.62044 5.98012 9.07012 5.9325 9.52938ZM5.93313 5.52994C5.84863 6.34537 4.825 6.68513 4.275 6.03181C3.93031 5.59575 4.02794 5.02119 4.40562 4.71244C5.05687 4.18175 6.01713 4.71119 5.93313 5.52994ZM10.5 18.375H9C8.48225 18.375 8.0625 17.9552 8.0625 17.4375C8.0625 16.9198 8.48225 16.5 9 16.5H10.5C11.0177 16.5 11.4375 16.9198 11.4375 17.4375C11.4375 17.9552 11.0177 18.375 10.5 18.375ZM14 14.375H9C8.48225 14.375 8.0625 13.9552 8.0625 13.4375C8.0625 12.9198 8.48225 12.5 9 12.5H14C14.5177 12.5 14.9375 12.9198 14.9375 13.4375C14.9375 13.9552 14.5177 14.375 14 14.375ZM14 10.375H9C8.48225 10.375 8.0625 9.95525 8.0625 9.4375C8.0625 8.91975 8.48225 8.5 9 8.5H14C14.5177 8.5 14.9375 8.91975 14.9375 9.4375C14.9375 9.95525 14.5177 10.375 14 10.375ZM14 6.375H9C8.48225 6.375 8.0625 5.95525 8.0625 5.4375C8.0625 4.91975 8.48225 4.5 9 4.5H14C14.5177 4.5 14.9375 4.91975 14.9375 5.4375C14.9375 5.95525 14.5177 6.375 14 6.375ZM19.5 18.375H18C17.4823 18.375 17.0625 17.9552 17.0625 17.4375C17.0625 16.9198 17.4823 16.5 18 16.5H19.5C20.0177 16.5 20.4375 16.9198 20.4375 17.4375C20.4375 17.9552 20.0177 18.375 19.5 18.375ZM22.5 14.875C19.5018 14.875 17.0625 12.4358 17.0625 9.4375C17.0625 6.43925 19.5018 4 22.5 4C25.4982 4 27.9375 6.43925 27.9375 9.4375C27.9375 12.4358 25.4982 14.875 22.5 14.875Z" fill="white"/>
+                            <path d="M21.5625 9.43735V6.00098C20.0516 6.41366 18.9375 7.79748 18.9375 9.43735C18.9375 11.4017 20.5356 12.9999 22.5 12.9999C24.1399 12.9999 25.5238 11.8857 25.9364 10.3749H22.5C21.9823 10.3749 21.5625 9.9551 21.5625 9.43735ZM26 26.4999H19.9375V24.2499H12.0625V26.4999H6C5.48225 26.4999 5.0625 26.9196 5.0625 27.4374C5.0625 27.9551 5.48225 28.3749 6 28.3749H26C26.5177 28.3749 26.9375 27.9551 26.9375 27.4374C26.9375 26.9196 26.5177 26.4999 26 26.4999Z" fill="white"/>
+                        </svg>
+
+
+                    </div>
+                    <div class="trioElemh1 changeText">Удобное управление</div>
+                    <div class="trioElemp changeText">
+                        Все заказы и данные хранятся в одном месте — управляйте бизнесом через единый интерфейс без лишних действий.
+                    </div>
+                </div>
+            </div>
+            <div class="cont ">
+                <div class="topMainText SF-bold">
+                    Возможности интеграции
+                </div>
+                <div class="mainTextSmall SF-reg">
+                    Готовые решения интеграции с Kaspi: от загрузки товаров и синхронизации каталога до выставления счетов и оплаты через QR-код — всё для удобства ваших клиентов и роста продаж
+                </div>
+                <div class="quartet SF-reg">
+                    <div class="quartetElem  changeElem">
+                        <svg style="z-index: 9;" class="qESVG1" width="200" height="200" viewBox="0 0 188 188" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="93.6818" cy="93.6818" r="93.6818" fill="#ef4536"/>
+                        </svg>
+                        <svg style="z-index: 10; left: 105px; top:50px;" class="qESVG2" width="36" height="27" viewBox="0 0 36 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19.2817 24.9613V18.3792H15.0735C9.19787 18.3792 4.10858 21.7746 1.62228 26.7052C1.40098 27.1447 0.753731 27.0776 0.615415 26.6049C0.207971 25.2093 0.000737469 23.7622 0 22.3076C0 13.9113 6.73318 7.13224 15.0735 7.13224H19.2817V0.550431C19.2817 0.0937638 19.8032 -0.163755 20.1617 0.116273L35.7892 12.3219C35.8548 12.3733 35.9079 12.4391 35.9445 12.5142C35.981 12.5894 36 12.672 36 12.7557C36 12.8394 35.981 12.922 35.9445 12.9972C35.9079 13.0723 35.8548 13.1381 35.7892 13.1895L20.1617 25.3955C19.8032 25.6755 19.2817 25.418 19.2817 24.9613Z" fill="#fff"/>
+                        </svg>
+                        <img style="top:60px; left:-24px; z-index: 99;" src="./img/laptop-mini.png" width="306" height="204" alt="">
+                        <img style="top:45px; left: 154px; z-index: 98;"src="./img/phone-mini.png" width="64" height="130" alt="">
+
+                        <div class="quartetElemRight">
+                            <div class="quartetElemh1 changeText SF-bold">Загрузка товаров с сайта на Kaspi</div>
+                            <div class="quartetElemp changeText SF-reg">
+                                Автоматическая выгрузка каталога прямо с вашего сайта в Kaspi. Экономит время и снижает риск ошибок при ручной загрузке.
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="quartetElem  changeElem">
+                        <svg style="z-index: 9;" class="qESVG1" width="200" height="200" viewBox="0 0 188 188" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="93.6818" cy="93.6818" r="93.6818" fill="#ef4536"/>
+                        </svg>
+                        <svg style="z-index: 10; left: 127px;top: 68px;" class="qESVG2" width="35" height="31" viewBox="0 0 35 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11.5902 21.3331L17.6465 17.8364L15.411 13.9644C12.2897 8.55813 6.46196 5.67915 0.60444 6.01077C0.0824872 6.04062 -0.199567 5.40941 0.161884 5.03104C1.22956 3.91476 2.45094 2.95535 3.78899 2.18193C11.5145 -2.2784 21.3288 0.31567 25.7594 7.98969L27.995 11.8617L34.051 8.36531C34.4712 8.12272 34.9851 8.4657 34.9179 8.9443L31.9891 29.8074C31.9767 29.895 31.9444 29.9789 31.8946 30.0524C31.8449 30.126 31.779 30.1873 31.702 30.2318C31.6249 30.2762 31.5389 30.3026 31.4503 30.3089C31.3617 30.3153 31.273 30.3013 31.1908 30.2682L11.6582 22.3733C11.2101 22.1922 11.17 21.5756 11.5902 21.3331Z" fill="#F7F8FB"/>
+                        </svg>
+
+                        <img style="top: 76px; left: 36px; z-index: 99;" src="./img/laptop-mini.png" width="260" height="175" alt="">
+                        <img style="top:55px; left: 31px; z-index: 100;"src="./img/phone-mini.png" width="91" height="185" alt="">
+
+                        <div class="quartetElemRight">
+                            <div class="quartetElemh1 changeText SF-bold">Загрузка товаров с Kaspi на сайт</div>
+                            <div class="quartetElemp changeText SF-reg">
+                                Синхронизация товаров с Kaspi в ваш интернет-магазин. Все позиции, цены и остатки обновляются без лишних действий.
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="quartetElem  changeElem">
+                        <svg style="z-index: 9;" class="qESVG1" width="200" height="200" viewBox="0 0 188 188" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="93.6818" cy="93.6818" r="93.6818" fill="#ef4536"/>
+                        </svg>
+                        
+                        <img style="top: 16px; left: -54px; z-index: 99;" src="./img/big-one-lap.png" width="370" height="246" alt="">
+
+
+                        <div class="quartetElemRight">
+                            <div class="quartetElemh1 changeText SF-bold">Загрузка товаров с сайта на Kaspi</div>
+                            <div class="quartetElemp changeText SF-reg">
+                                Автоматическая выгрузка каталога прямо с вашего сайта в Kaspi. Экономит время и снижает риск ошибок при ручной загрузке.
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="quartetElem  changeElem">
+                        <svg style="z-index: 9;" class="qESVG1" width="200" height="200" viewBox="0 0 188 188" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="93.6818" cy="93.6818" r="93.6818" fill="#ef4536"/>
+                        </svg>
+                        
+
+                        <img style="top:35px; left: 5px; z-index: 98;"src="./img/upscale-phone.png" width="250" height="500" alt="">
+                        <div class="blurBox"></div>
+                        <div class="quartetElemRight">
+                            <div class="quartetElemh1 changeText SF-bold">Загрузка товаров с сайта на Kaspi</div>
+                            <div class="quartetElemp changeText SF-reg">
+                                Автоматическая выгрузка каталога прямо с вашего сайта в Kaspi. Экономит время и снижает риск ошибок при ручной загрузке.
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+            </div>
+            <div class="cont">
+                <div class="topMainText SF-bold">
+                    Портфолио
+                </div>
+                <div class="mainTextSmall SF-reg">
+                    Готовые решения интеграции с Kaspi: от загрузки товаров и синхронизации каталога до выставления счетов и оплаты через QR-код — всё для удобства ваших клиентов и роста продаж
+                </div>
+                <div class="mainTextSemi SF-Sbold" >
+                    Загрузка товаров с сайта
+                </div>
+                <div class="mainTextSmall SF-reg">
+                    Готовые решения интеграции с Kaspi: от загрузки товаров и синхронизации каталога до выставления счетов и оплаты через QR-код — всё для удобства ваших клиентов и роста продаж
+                </div>
+                <div class="shop">
+                    <div class="itemTrio">
+                        <div class="item">
+                            <img class="itemTool" src="./img/tool.png" alt="">
+                            <img class="itemLaptopTool" src="./img/laptop-tool.png" alt="">
+                            <div class="itemText">
+                                <div class="itemh1 SF-Sbold">Мир Инструмента</div>
+                                <div class="itemp SF-reg">Была выполнена настройка выгрузка товаров с сайта в магазин Kaspi.kz и выставление удаленных счетов на оплату при покупке на сайте</div>
+
+                                <a href="#" class="SF-reg">www.mirinstrum.kz</a>
+                                <div class="itemButton SF-reg">Смотреть</div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img class="itemTool" src="./img/tool.png" alt="">
+                            <img class="itemLaptopTool" src="./img/laptop-tool.png" alt="">
+                            <div class="itemText">
+                                <div class="itemh1 SF-Sbold">Мир Инструмента</div>
+                                <div class="itemp SF-reg">Была выполнена настройка выгрузка товаров с сайта в магазин Kaspi.kz и выставление удаленных счетов на оплату при покупке на сайте</div>
+
+                                <a href="#" class="SF-reg">www.mirinstrum.kz</a>
+                                <div class="itemButton SF-reg">Смотреть</div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img class="itemTool" src="./img/tool.png" alt="">
+                            <img class="itemLaptopTool" src="./img/laptop-tool.png" alt="">
+                            <div class="itemText">
+                                <div class="itemh1 SF-Sbold">Мир Инструмента</div>
+                                <div class="itemp SF-reg">Была выполнена настройка выгрузка товаров с сайта в магазин Kaspi.kz и выставление удаленных счетов на оплату при покупке на сайте</div>
+
+                                <a href="#" class="SF-reg">www.mirinstrum.kz</a>
+                                <div class="itemButton SF-reg">Смотреть</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="itemTrio">
+                        <div class="item">
+                            <img class="itemTool" src="./img/tool.png" alt="">
+                            <img class="itemLaptopTool" src="./img/laptop-tool.png" alt="">
+                            <div class="itemText">
+                                <div class="itemh1 SF-Sbold">Мир Инструмента</div>
+                                <div class="itemp SF-reg">Была выполнена настройка выгрузка товаров с сайта в магазин Kaspi.kz и выставление удаленных счетов на оплату при покупке на сайте</div>
+
+                                <a href="#" class="SF-reg">www.mirinstrum.kz</a>
+                                <div class="itemButton SF-reg">Смотреть</div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img class="itemTool" src="./img/tool.png" alt="">
+                            <img class="itemLaptopTool" src="./img/laptop-tool.png" alt="">
+                            <div class="itemText">
+                                <div class="itemh1 SF-Sbold">Мир Инструмента</div>
+                                <div class="itemp SF-reg">Была выполнена настройка выгрузка товаров с сайта в магазин Kaspi.kz и выставление удаленных счетов на оплату при покупке на сайте</div>
+
+                                <a href="#" class="SF-reg">www.mirinstrum.kz</a>
+                                <div class="itemButton SF-reg">Смотреть</div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img class="itemTool" src="./img/tool.png" alt="">
+                            <img class="itemLaptopTool" src="./img/laptop-tool.png" alt="">
+                            <div class="itemText">
+                                <div class="itemh1 SF-Sbold">Мир Инструмента</div>
+                                <div class="itemp SF-reg">Была выполнена настройка выгрузка товаров с сайта в магазин Kaspi.kz и выставление удаленных счетов на оплату при покупке на сайте</div>
+
+                                <a href="#" class="SF-reg">www.mirinstrum.kz</a>
+                                <div class="itemButton SF-reg">Смотреть</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="buttonMore SF-reg">Показать еще проекты</div>
+                    
+                </div>
+                
+                <div class="mainTextSemi SF-Sbold" >
+                    Загрузка товаров с Kaspi
+                </div>
+                <div class="mainTextSmall SF-reg">
+                    Готовые решения интеграции с Kaspi: от загрузки товаров и синхронизации каталога до выставления счетов и оплаты через QR-код — всё для удобства ваших клиентов и роста продаж
+                </div>
+                <div class="shop">
+                    <div class="itemTrio">
+                        <div class="item">
+                            <img class="itemTool" src="./img/tool.png" alt="">
+                            <img class="itemLaptopTool" src="./img/laptop-tool.png" alt="">
+                            <div class="itemText">
+                                <div class="itemh1 SF-Sbold">Мир Инструмента</div>
+                                <div class="itemp SF-reg">Была выполнена настройка выгрузка товаров с сайта в магазин Kaspi.kz и выставление удаленных счетов на оплату при покупке на сайте</div>
+
+                                <a href="#" class="SF-reg">www.mirinstrum.kz</a>
+                                <div class="itemButton SF-reg">Смотреть</div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img class="itemTool" src="./img/tool.png" alt="">
+                            <img class="itemLaptopTool" src="./img/laptop-tool.png" alt="">
+                            <div class="itemText">
+                                <div class="itemh1 SF-Sbold">Мир Инструмента</div>
+                                <div class="itemp SF-reg">Была выполнена настройка выгрузка товаров с сайта в магазин Kaspi.kz и выставление удаленных счетов на оплату при покупке на сайте</div>
+
+                                <a href="#" class="SF-reg">www.mirinstrum.kz</a>
+                                <div class="itemButton SF-reg">Смотреть</div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img class="itemTool" src="./img/tool.png" alt="">
+                            <img class="itemLaptopTool" src="./img/laptop-tool.png" alt="">
+                            <div class="itemText">
+                                <div class="itemh1 SF-Sbold">Мир Инструмента</div>
+                                <div class="itemp SF-reg">Была выполнена настройка выгрузка товаров с сайта в магазин Kaspi.kz и выставление удаленных счетов на оплату при покупке на сайте</div>
+
+                                <a href="#" class="SF-reg">www.mirinstrum.kz</a>
+                                <div class="itemButton SF-reg">Смотреть</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="itemTrio">
+                        <div class="item">
+                            <img class="itemTool" src="./img/tool.png" alt="">
+                            <img class="itemLaptopTool" src="./img/laptop-tool.png" alt="">
+                            <div class="itemText">
+                                <div class="itemh1 SF-Sbold">Мир Инструмента</div>
+                                <div class="itemp SF-reg">Была выполнена настройка выгрузка товаров с сайта в магазин Kaspi.kz и выставление удаленных счетов на оплату при покупке на сайте</div>
+
+                                <a href="#" class="SF-reg">www.mirinstrum.kz</a>
+                                <div class="itemButton SF-reg">Смотреть</div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img class="itemTool" src="./img/tool.png" alt="">
+                            <img class="itemLaptopTool" src="./img/laptop-tool.png" alt="">
+                            <div class="itemText">
+                                <div class="itemh1 SF-Sbold">Мир Инструмента</div>
+                                <div class="itemp SF-reg">Была выполнена настройка выгрузка товаров с сайта в магазин Kaspi.kz и выставление удаленных счетов на оплату при покупке на сайте</div>
+
+                                <a href="#" class="SF-reg">www.mirinstrum.kz</a>
+                                <div class="itemButton SF-reg">Смотреть</div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img class="itemTool" src="./img/tool.png" alt="">
+                            <img class="itemLaptopTool" src="./img/laptop-tool.png" alt="">
+                            <div class="itemText">
+                                <div class="itemh1 SF-Sbold">Мир Инструмента</div>
+                                <div class="itemp SF-reg">Была выполнена настройка выгрузка товаров с сайта в магазин Kaspi.kz и выставление удаленных счетов на оплату при покупке на сайте</div>
+
+                                <a href="#" class="SF-reg">www.mirinstrum.kz</a>
+                                <div class="itemButton SF-reg">Смотреть</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="buttonMore SF-reg">Показать еще проекты</div>
+                    
+                </div>
+
+                <div class="mainTextSemi SF-Sbold" >
+                    Генерация QR кода для оплаты
+                </div>
+                <div class="mainTextSmall SF-reg">
+                    Готовые решения интеграции с Kaspi: от загрузки товаров и синхронизации каталога до выставления счетов и оплаты через QR-код — всё для удобства ваших клиентов и роста продаж
+                </div>
+                <div class="shop">
+                    <div class="itemTrio">
+                        <div class="item">
+                            <img class="itemTool" src="./img/tool.png" alt="">
+                            <img class="itemLaptopTool" src="./img/laptop-tool.png" alt="">
+                            <div class="itemText">
+                                <div class="itemh1 SF-Sbold">Мир Инструмента</div>
+                                <div class="itemp SF-reg">Была выполнена настройка выгрузка товаров с сайта в магазин Kaspi.kz и выставление удаленных счетов на оплату при покупке на сайте</div>
+
+                                <a href="#" class="SF-reg">www.mirinstrum.kz</a>
+                                <div class="itemButton SF-reg">Смотреть</div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img class="itemTool" src="./img/tool.png" alt="">
+                            <img class="itemLaptopTool" src="./img/laptop-tool.png" alt="">
+                            <div class="itemText">
+                                <div class="itemh1 SF-Sbold">Мир Инструмента</div>
+                                <div class="itemp SF-reg">Была выполнена настройка выгрузка товаров с сайта в магазин Kaspi.kz и выставление удаленных счетов на оплату при покупке на сайте</div>
+
+                                <a href="#" class="SF-reg">www.mirinstrum.kz</a>
+                                <div class="itemButton SF-reg">Смотреть</div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img class="itemTool" src="./img/tool.png" alt="">
+                            <img class="itemLaptopTool" src="./img/laptop-tool.png" alt="">
+                            <div class="itemText">
+                                <div class="itemh1 SF-Sbold">Мир Инструмента</div>
+                                <div class="itemp SF-reg">Была выполнена настройка выгрузка товаров с сайта в магазин Kaspi.kz и выставление удаленных счетов на оплату при покупке на сайте</div>
+
+                                <a href="#" class="SF-reg">www.mirinstrum.kz</a>
+                                <div class="itemButton SF-reg">Смотреть</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="itemTrio">
+                        <div class="item">
+                            <img class="itemTool" src="./img/tool.png" alt="">
+                            <img class="itemLaptopTool" src="./img/laptop-tool.png" alt="">
+                            <div class="itemText">
+                                <div class="itemh1 SF-Sbold">Мир Инструмента</div>
+                                <div class="itemp SF-reg">Была выполнена настройка выгрузка товаров с сайта в магазин Kaspi.kz и выставление удаленных счетов на оплату при покупке на сайте</div>
+
+                                <a href="#" class="SF-reg">www.mirinstrum.kz</a>
+                                <div class="itemButton SF-reg">Смотреть</div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img class="itemTool" src="./img/tool.png" alt="">
+                            <img class="itemLaptopTool" src="./img/laptop-tool.png" alt="">
+                            <div class="itemText">
+                                <div class="itemh1 SF-Sbold">Мир Инструмента</div>
+                                <div class="itemp SF-reg">Была выполнена настройка выгрузка товаров с сайта в магазин Kaspi.kz и выставление удаленных счетов на оплату при покупке на сайте</div>
+
+                                <a href="#" class="SF-reg">www.mirinstrum.kz</a>
+                                <div class="itemButton SF-reg">Смотреть</div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img class="itemTool" src="./img/tool.png" alt="">
+                            <img class="itemLaptopTool" src="./img/laptop-tool.png" alt="">
+                            <div class="itemText">
+                                <div class="itemh1 SF-Sbold">Мир Инструмента</div>
+                                <div class="itemp SF-reg">Была выполнена настройка выгрузка товаров с сайта в магазин Kaspi.kz и выставление удаленных счетов на оплату при покупке на сайте</div>
+
+                                <a href="#" class="SF-reg">www.mirinstrum.kz</a>
+                                <div class="itemButton SF-reg">Смотреть</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="buttonMore SF-reg">Показать еще проекты</div>
+                    
+                </div>
+                <div class="mainTextSemi SF-Sbold" >
+                    Выставление счета на оплату в Kaspi при покупке на сайте
+                </div>
+                <div class="mainTextSmall SF-reg">
+                    Готовые решения интеграции с Kaspi: от загрузки товаров и синхронизации каталога до выставления счетов и оплаты через QR-код — всё для удобства ваших клиентов и роста продаж
+                </div>
+                <div class="shop">
+                    <div class="itemTrio">
+                        <div class="item">
+                            <img class="itemTool" src="./img/tool.png" alt="">
+                            <img class="itemLaptopTool" src="./img/laptop-tool.png" alt="">
+                            <div class="itemText">
+                                <div class="itemh1 SF-Sbold">Мир Инструмента</div>
+                                <div class="itemp SF-reg">Была выполнена настройка выгрузка товаров с сайта в магазин Kaspi.kz и выставление удаленных счетов на оплату при покупке на сайте</div>
+
+                                <a href="#" class="SF-reg">www.mirinstrum.kz</a>
+                                <div class="itemButton SF-reg">Смотреть</div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img class="itemTool" src="./img/tool.png" alt="">
+                            <img class="itemLaptopTool" src="./img/laptop-tool.png" alt="">
+                            <div class="itemText">
+                                <div class="itemh1 SF-Sbold">Мир Инструмента</div>
+                                <div class="itemp SF-reg">Была выполнена настройка выгрузка товаров с сайта в магазин Kaspi.kz и выставление удаленных счетов на оплату при покупке на сайте</div>
+
+                                <a href="#" class="SF-reg">www.mirinstrum.kz</a>
+                                <div class="itemButton SF-reg">Смотреть</div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img class="itemTool" src="./img/tool.png" alt="">
+                            <img class="itemLaptopTool" src="./img/laptop-tool.png" alt="">
+                            <div class="itemText">
+                                <div class="itemh1 SF-Sbold">Мир Инструмента</div>
+                                <div class="itemp SF-reg">Была выполнена настройка выгрузка товаров с сайта в магазин Kaspi.kz и выставление удаленных счетов на оплату при покупке на сайте</div>
+
+                                <a href="#" class="SF-reg">www.mirinstrum.kz</a>
+                                <div class="itemButton SF-reg">Смотреть</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="itemTrio">
+                        <div class="item">
+                            <img class="itemTool" src="./img/tool.png" alt="">
+                            <img class="itemLaptopTool" src="./img/laptop-tool.png" alt="">
+                            <div class="itemText">
+                                <div class="itemh1 SF-Sbold">Мир Инструмента</div>
+                                <div class="itemp SF-reg">Была выполнена настройка выгрузка товаров с сайта в магазин Kaspi.kz и выставление удаленных счетов на оплату при покупке на сайте</div>
+
+                                <a href="#" class="SF-reg">www.mirinstrum.kz</a>
+                                <div class="itemButton SF-reg">Смотреть</div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img class="itemTool" src="./img/tool.png" alt="">
+                            <img class="itemLaptopTool" src="./img/laptop-tool.png" alt="">
+                            <div class="itemText">
+                                <div class="itemh1 SF-Sbold">Мир Инструмента</div>
+                                <div class="itemp SF-reg">Была выполнена настройка выгрузка товаров с сайта в магазин Kaspi.kz и выставление удаленных счетов на оплату при покупке на сайте</div>
+
+                                <a href="#" class="SF-reg">www.mirinstrum.kz</a>
+                                <div class="itemButton SF-reg">Смотреть</div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img class="itemTool" src="./img/tool.png" alt="">
+                            <img class="itemLaptopTool" src="./img/laptop-tool.png" alt="">
+                            <div class="itemText">
+                                <div class="itemh1 SF-Sbold">Мир Инструмента</div>
+                                <div class="itemp SF-reg">Была выполнена настройка выгрузка товаров с сайта в магазин Kaspi.kz и выставление удаленных счетов на оплату при покупке на сайте</div>
+
+                                <a href="#" class="SF-reg">www.mirinstrum.kz</a>
+                                <div class="itemButton SF-reg">Смотреть</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="buttonMore SF-reg">Показать еще проекты</div>
+                    
+                </div>
+            </div>
+            <div class="cont">
+                <div class="topMainText SF-bold">
+                    Портфолио
+                </div>
+                <div class="mainTextSmall SF-reg">
+                    Готовые решения интеграции с Kaspi: от загрузки товаров и синхронизации каталога до выставления счетов и оплаты через QR-код — всё для удобства ваших клиентов и роста продаж
+                </div>
+
+
+                <div class="mainTextSemi SF-Sbold" >
+                    Загрузка товаров с сайта
+                </div>
+                <div class="mainTextSmall SF-reg">
+                    Готовые решения интеграции с Kaspi: от загрузки товаров и синхронизации каталога до выставления счетов и оплаты через QR-код — всё для удобства ваших клиентов и роста продаж
+                </div>
+
+                <div class="carousel" id="carousel-1">
+                    <div class="carouselInner"> 
+                        <div class="carouselItem">
+                            <img src="./img/drel.png" alt="Изображение 1">
+                            <div class="carouselItemInfo">
+                                <img class="itemTool" src="./img/tool.png" alt="Логотип">
+                                <div class="carouselItemInfoText SF-reg">
+                                    Мы обратились за интеграцией нашего сайта с Kaspi и получили именно то, что нужно современному магазину. Теперь наши клиенты могут покупать товары в рассрочку прямо через сайт, оплачивать удобным способом по QR-коду и всегда видеть актуальные цены и наличие на складе. Это сильно упростило процесс покупок для наших клиентов и повысило уровень доверия к магазину. Благодарим за качественную работу и грамотный подход к проекту!
+                                </div>
+                                <div class="pripiska SF-reg">
+                                    Ольга Савченко, Маркетолог «Мир Инструментов»
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carouselItem">
+                            <img src="./img/drel.png" alt="Изображение 2">
+                            <div class="carouselItemInfo">
+                                <img class="itemTool" src="./img/tool.png" alt="Логотип">
+                                <div class="carouselItemInfoText SF-reg">
+                                    Это второй отзыв для демонстрации работы прокрутки. Интеграция прошла отлично, клиенты довольны, продажи растут. Спасибо команде за оперативность и высокое качество работы!
+                                </div>
+                                <div class="pripiska SF-reg">
+                                    Иван Петров, Директор
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carouselItem">
+                            <img src="./img/drel.png" alt="Изображение 2">
+                            <div class="carouselItemInfo">
+                                <img class="itemTool" src="./img/tool.png" alt="Логотип">
+                                <div class="carouselItemInfoText SF-reg">
+                                    Это второй отзыв для демонстрации работы прокрутки. Интеграция прошла отлично, клиенты довольны, продажи растут. Спасибо команде за оперативность и высокое качество работы!
+                                </div>
+                                <div class="pripiska SF-reg">
+                                    Иван Петров, Директор
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carouselItem">
+                            <img src="./img/drel.png" alt="Изображение 2">
+                            <div class="carouselItemInfo">
+                                <img class="itemTool" src="./img/tool.png" alt="Логотип">
+                                <div class="carouselItemInfoText SF-reg">
+                                    Это второй отзыв для демонстрации работы прокрутки. Интеграция прошла отлично, клиенты довольны, продажи растут. Спасибо команде за оперативность и высокое качество работы!
+                                </div>
+                                <div class="pripiska SF-reg">
+                                    Иван Петров, Директор
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carouselControls">
+                        <div class="strelkaLeft strelka"></div>
+                        <div>
+                            <img class="indicator" data-slide-to="0" src="img/fittCircle.svg" alt="Индикатор 1">
+                            <img class="indicator" data-slide-to="1" src="img/circle.svg" alt="Индикатор 2">
+                            <img class="indicator" data-slide-to="2" src="img/circle.svg" alt="Индикатор 3">
+                            <img class="indicator" data-slide-to="3" src="img/circle.svg" alt="Индикатор 4">
+                        </div>
+                        <div class="strelkaRight strelka"></div>
+                    </div>
+                </div>
+                <div class="mainTextSemi SF-Sbold" >
+                    Загрузка товаров с Kaspi
+                </div>
+                <div class="mainTextSmall SF-reg">
+                    Готовые решения интеграции с Kaspi: от загрузки товаров и синхронизации каталога до выставления счетов и оплаты через QR-код — всё для удобства ваших клиентов и роста продаж
+                </div>
+
+                <div class="carousel" id="carousel-2">
+                    <div class="carouselInner"> 
+                        <div class="carouselItem">
+                            <img src="./img/drel.png" alt="Изображение 1">
+                            <div class="carouselItemInfo">
+                                <img class="itemTool" src="./img/tool.png" alt="Логотип">
+                                <div class="carouselItemInfoText SF-reg">
+                                    Мы обратились за интеграцией нашего сайта с Kaspi и получили именно то, что нужно современному магазину. Теперь наши клиенты могут покупать товары в рассрочку прямо через сайт, оплачивать удобным способом по QR-коду и всегда видеть актуальные цены и наличие на складе. Это сильно упростило процесс покупок для наших клиентов и повысило уровень доверия к магазину. Благодарим за качественную работу и грамотный подход к проекту!
+                                </div>
+                                <div class="pripiska SF-reg">
+                                    Ольга Савченко, Маркетолог «Мир Инструментов»
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carouselItem">
+                            <img src="./img/drel.png" alt="Изображение 2">
+                            <div class="carouselItemInfo">
+                                <img class="itemTool" src="./img/tool.png" alt="Логотип">
+                                <div class="carouselItemInfoText SF-reg">
+                                    Это второй отзыв для демонстрации работы прокрутки. Интеграция прошла отлично, клиенты довольны, продажи растут. Спасибо команде за оперативность и высокое качество работы!
+                                </div>
+                                <div class="pripiska SF-reg">
+                                    Иван Петров, Директор
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carouselItem">
+                            <img src="./img/drel.png" alt="Изображение 2">
+                            <div class="carouselItemInfo">
+                                <img class="itemTool" src="./img/tool.png" alt="Логотип">
+                                <div class="carouselItemInfoText SF-reg">
+                                    Это второй отзыв для демонстрации работы прокрутки. Интеграция прошла отлично, клиенты довольны, продажи растут. Спасибо команде за оперативность и высокое качество работы!
+                                </div>
+                                <div class="pripiska SF-reg">
+                                    Иван Петров, Директор
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carouselItem">
+                            <img src="./img/drel.png" alt="Изображение 2">
+                            <div class="carouselItemInfo">
+                                <img class="itemTool" src="./img/tool.png" alt="Логотип">
+                                <div class="carouselItemInfoText SF-reg">
+                                    Это второй отзыв для демонстрации работы прокрутки. Интеграция прошла отлично, клиенты довольны, продажи растут. Спасибо команде за оперативность и высокое качество работы!
+                                </div>
+                                <div class="pripiska SF-reg">
+                                    Иван Петров, Директор
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carouselControls">
+                        <div class="strelkaLeft strelka"></div>
+                        <div>
+                            <img class="indicator" data-slide-to="0" src="img/fittCircle.svg" alt="Индикатор 1">
+                            <img class="indicator" data-slide-to="1" src="img/circle.svg" alt="Индикатор 2">
+                            <img class="indicator" data-slide-to="2" src="img/circle.svg" alt="Индикатор 3">
+                            <img class="indicator" data-slide-to="3" src="img/circle.svg" alt="Индикатор 4">
+                        </div>
+                        <div class="strelkaRight strelka"></div>
+                    </div>
+                </div>
+                <div class="mainTextSemi SF-Sbold" >
+                    Генерация QR кода для оплаты
+                </div>
+                <div class="mainTextSmall SF-reg">
+                    Готовые решения интеграции с Kaspi: от загрузки товаров и синхронизации каталога до выставления счетов и оплаты через QR-код — всё для удобства ваших клиентов и роста продаж
+                </div>
+
+                <div class="carousel" id="carousel-3">
+                    <div class="carouselInner"> 
+                        <div class="carouselItem">
+                            <img src="./img/drel.png" alt="Изображение 1">
+                            <div class="carouselItemInfo">
+                                <img class="itemTool" src="./img/tool.png" alt="Логотип">
+                                <div class="carouselItemInfoText SF-reg">
+                                    Мы обратились за интеграцией нашего сайта с Kaspi и получили именно то, что нужно современному магазину. Теперь наши клиенты могут покупать товары в рассрочку прямо через сайт, оплачивать удобным способом по QR-коду и всегда видеть актуальные цены и наличие на складе. Это сильно упростило процесс покупок для наших клиентов и повысило уровень доверия к магазину. Благодарим за качественную работу и грамотный подход к проекту!
+                                </div>
+                                <div class="pripiska SF-reg">
+                                    Ольга Савченко, Маркетолог «Мир Инструментов»
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carouselItem">
+                            <img src="./img/drel.png" alt="Изображение 2">
+                            <div class="carouselItemInfo">
+                                <img class="itemTool" src="./img/tool.png" alt="Логотип">
+                                <div class="carouselItemInfoText SF-reg">
+                                    Это второй отзыв для демонстрации работы прокрутки. Интеграция прошла отлично, клиенты довольны, продажи растут. Спасибо команде за оперативность и высокое качество работы!
+                                </div>
+                                <div class="pripiska SF-reg">
+                                    Иван Петров, Директор
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carouselItem">
+                            <img src="./img/drel.png" alt="Изображение 2">
+                            <div class="carouselItemInfo">
+                                <img class="itemTool" src="./img/tool.png" alt="Логотип">
+                                <div class="carouselItemInfoText SF-reg">
+                                    Это второй отзыв для демонстрации работы прокрутки. Интеграция прошла отлично, клиенты довольны, продажи растут. Спасибо команде за оперативность и высокое качество работы!
+                                </div>
+                                <div class="pripiska SF-reg">
+                                    Иван Петров, Директор
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carouselItem">
+                            <img src="./img/drel.png" alt="Изображение 2">
+                            <div class="carouselItemInfo">
+                                <img class="itemTool" src="./img/tool.png" alt="Логотип">
+                                <div class="carouselItemInfoText SF-reg">
+                                    Это второй отзыв для демонстрации работы прокрутки. Интеграция прошла отлично, клиенты довольны, продажи растут. Спасибо команде за оперативность и высокое качество работы!
+                                </div>
+                                <div class="pripiska SF-reg">
+                                    Иван Петров, Директор
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carouselControls">
+                        <div class="strelkaLeft strelka"></div>
+                        <div>
+                            <img class="indicator" data-slide-to="0" src="img/fittCircle.svg" alt="Индикатор 1">
+                            <img class="indicator" data-slide-to="1" src="img/circle.svg" alt="Индикатор 2">
+                            <img class="indicator" data-slide-to="2" src="img/circle.svg" alt="Индикатор 3">
+                            <img class="indicator" data-slide-to="3" src="img/circle.svg" alt="Индикатор 4">
+                        </div>
+                        <div class="strelkaRight strelka"></div>
+                    </div>
+                </div>
+                <div class="mainTextSemi SF-Sbold" >
+                    Выставление счета на оплату в Kaspi при покупке на сайте    
+                </div>
+                <div class="mainTextSmall SF-reg">
+                    Готовые решения интеграции с Kaspi: от загрузки товаров и синхронизации каталога до выставления счетов и оплаты через QR-код — всё для удобства ваших клиентов и роста продаж
+                </div>
+
+                <div class="carousel" id="carousel-4">
+                    <div class="carouselInner"> 
+                        <div class="carouselItem">
+                            <img src="./img/drel.png" alt="Изображение 1">
+                            <div class="carouselItemInfo">
+                                <img class="itemTool" src="./img/tool.png" alt="Логотип">
+                                <div class="carouselItemInfoText SF-reg">
+                                    Мы обратились за интеграцией нашего сайта с Kaspi и получили именно то, что нужно современному магазину. Теперь наши клиенты могут покупать товары в рассрочку прямо через сайт, оплачивать удобным способом по QR-коду и всегда видеть актуальные цены и наличие на складе. Это сильно упростило процесс покупок для наших клиентов и повысило уровень доверия к магазину. Благодарим за качественную работу и грамотный подход к проекту!
+                                </div>
+                                <div class="pripiska SF-reg">
+                                    Ольга Савченко, Маркетолог «Мир Инструментов»
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carouselItem">
+                            <img src="./img/drel.png" alt="Изображение 2">
+                            <div class="carouselItemInfo">
+                                <img class="itemTool" src="./img/tool.png" alt="Логотип">
+                                <div class="carouselItemInfoText SF-reg">
+                                    Это второй отзыв для демонстрации работы прокрутки. Интеграция прошла отлично, клиенты довольны, продажи растут. Спасибо команде за оперативность и высокое качество работы!
+                                </div>
+                                <div class="pripiska SF-reg">
+                                    Иван Петров, Директор
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carouselItem">
+                            <img src="./img/drel.png" alt="Изображение 2">
+                            <div class="carouselItemInfo">
+                                <img class="itemTool" src="./img/tool.png" alt="Логотип">
+                                <div class="carouselItemInfoText SF-reg">
+                                    Это второй отзыв для демонстрации работы прокрутки. Интеграция прошла отлично, клиенты довольны, продажи растут. Спасибо команде за оперативность и высокое качество работы!
+                                </div>
+                                <div class="pripiska SF-reg">
+                                    Иван Петров, Директор
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carouselItem">
+                            <img src="./img/drel.png" alt="Изображение 2">
+                            <div class="carouselItemInfo">
+                                <img class="itemTool" src="./img/tool.png" alt="Логотип">
+                                <div class="carouselItemInfoText SF-reg">
+                                    Это второй отзыв для демонстрации работы прокрутки. Интеграция прошла отлично, клиенты довольны, продажи растут. Спасибо команде за оперативность и высокое качество работы!
+                                </div>
+                                <div class="pripiska SF-reg">
+                                    Иван Петров, Директор
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carouselControls">
+                        <div class="strelkaLeft strelka"></div>
+                        <div>
+                            <img class="indicator" data-slide-to="0" src="img/fittCircle.svg" alt="Индикатор 1">
+                            <img class="indicator" data-slide-to="1" src="img/circle.svg" alt="Индикатор 2">
+                            <img class="indicator" data-slide-to="2" src="img/circle.svg" alt="Индикатор 3">
+                            <img class="indicator" data-slide-to="3" src="img/circle.svg" alt="Индикатор 4">
+                        </div>
+                        <div class="strelkaRight strelka"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="cont">
+                <div class="sells">
+                    <div class="sellPhone">
+                        <img src="./img/sellPhone.png" alt="">
+                    </div>
+                    <div class="sellText">
+                        <div class="sellTexth1 SF-bold">
+                            Увеличивайте продажи и привлекайте новых клиентов на <span>Kaspi.kz</span>
+                        </div>
+                        <div class="sellTextp SF-reg">
+                            Готовые решения интеграции с Kaspi: от загрузки товаров и синхронизации каталога до выставления счетов и оплаты через QR-код — всё для удобства ваших клиентов и роста продаж
+                        </div>
+                        <div class="redButton SF-light">Получить консультацию</div>
+                    </div>
+                </div>
+            </div>
+            <div class="cont">
+                <div class="topMainText SF-Sbold center" >
+                    Как происходит интеграция
+                </div>
+                <div class="mainTextSmall SF-reg center">
+                    Готовые решения интеграции с Kaspi: от загрузки товаров и синхронизации каталога до выставления счетов и оплаты через QR-код — всё для удобства ваших клиентов и роста продаж
+                </div>
+                <img id="mac" src="./img/mac.png" alt="">
+            </div>
+            <div class="cont">
+                <div class="topMainText SF-Sbold " style="font-size: 48px;">
+                    Этапы интеграции
+                </div>
+                <div class="mainTextSmall SF-reg ">
+                    Готовые решения интеграции с Kaspi: от загрузки товаров и синхронизации каталога до выставления счетов и оплаты через QR-код — всё для удобства ваших клиентов и роста продаж
+                </div>
+                <img id="steps" src="./img/steps.png" alt="">
+            </div>
+            <div class="cont">
+                <div class="carousel" id="carousel-5">
+                    <div class="carouselInner"> 
+                        <div class="carouselItem">
+                            <img src="./img/drel.png" alt="Изображение 1">
+                            <div class="carouselItemInfo">
+                                <img class="itemTool" src="./img/tool.png" alt="Логотип">
+                                <div class="carouselItemInfoText SF-reg">
+                                    Мы обратились за интеграцией нашего сайта с Kaspi и получили именно то, что нужно современному магазину. Теперь наши клиенты могут покупать товары в рассрочку прямо через сайт, оплачивать удобным способом по QR-коду и всегда видеть актуальные цены и наличие на складе. Это сильно упростило процесс покупок для наших клиентов и повысило уровень доверия к магазину. Благодарим за качественную работу и грамотный подход к проекту!
+                                </div>
+                                <div class="pripiska SF-reg">
+                                    Ольга Савченко, Маркетолог «Мир Инструментов»
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carouselItem">
+                            <img src="./img/drel.png" alt="Изображение 2">
+                            <div class="carouselItemInfo">
+                                <img class="itemTool" src="./img/tool.png" alt="Логотип">
+                                <div class="carouselItemInfoText SF-reg">
+                                    Это второй отзыв для демонстрации работы прокрутки. Интеграция прошла отлично, клиенты довольны, продажи растут. Спасибо команде за оперативность и высокое качество работы!
+                                </div>
+                                <div class="pripiska SF-reg">
+                                    Иван Петров, Директор
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carouselItem">
+                            <img src="./img/drel.png" alt="Изображение 2">
+                            <div class="carouselItemInfo">
+                                <img class="itemTool" src="./img/tool.png" alt="Логотип">
+                                <div class="carouselItemInfoText SF-reg">
+                                    Это второй отзыв для демонстрации работы прокрутки. Интеграция прошла отлично, клиенты довольны, продажи растут. Спасибо команде за оперативность и высокое качество работы!
+                                </div>
+                                <div class="pripiska SF-reg">
+                                    Иван Петров, Директор
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carouselItem">
+                            <img src="./img/drel.png" alt="Изображение 2">
+                            <div class="carouselItemInfo">
+                                <img class="itemTool" src="./img/tool.png" alt="Логотип">
+                                <div class="carouselItemInfoText SF-reg">
+                                    Это второй отзыв для демонстрации работы прокрутки. Интеграция прошла отлично, клиенты довольны, продажи растут. Спасибо команде за оперативность и высокое качество работы!
+                                </div>
+                                <div class="pripiska SF-reg">
+                                    Иван Петров, Директор
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carouselControls">
+                        <div class="strelkaLeft strelka"></div>
+                        <div>
+                            <img class="indicator" data-slide-to="0" src="img/fittCircle.svg" alt="Индикатор 1">
+                            <img class="indicator" data-slide-to="1" src="img/circle.svg" alt="Индикатор 2">
+                            <img class="indicator" data-slide-to="2" src="img/circle.svg" alt="Индикатор 3">
+                            <img class="indicator" data-slide-to="3" src="img/circle.svg" alt="Индикатор 4">
+                        </div>
+                        <div class="strelkaRight strelka"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="cont">
+                <div class="sells">
+                    <div class="sellPhone">
+                        <img src="./img/sellPhone.png" alt="">
+                    </div>
+                    <div class="sellText">
+                        <div class="sellTexth1 SF-bold">
+                            Возможности интеграций
+                        </div>
+                        <div class="sellAccordion">
+                            <div class="progressLine">
+                                <div class="progressRed"></div>
+                            </div>
+                            <div class="sellAccTop SF-bold">
+                                Информация о Ваших товарах будет размещенна в Kaspi магазине
+                                <div class="sircle"><div class="down-arrow"></div></div>
+                            </div>
+                            <div class="sellAccBot SF-reg">
+                                Готовые решения интеграции с Kaspi: от загрузки товаров и синхронизации каталога до выставления счетов и оплаты через QR-код — всё для удобства ваших клиентов и роста продаж
+                            </div>
+                            
+
+                        </div>
+                        <div class="sellAccordion">
+                            <div class="progressLine">
+                                <div class="progressRed"></div>
+                            </div>
+                            <div class="sellAccTop SF-bold">
+                                Синхронизация с 1С
+                                <div class="sircle"><div class="down-arrow"></div></div>
+                            </div>
+                            <div class="sellAccBot SF-reg">
+                                Готовые решения интеграции с Kaspi: от загрузки товаров и синхронизации каталога до выставления счетов и оплаты через QR-код — всё для удобства ваших клиентов и роста продаж
+                            </div>
+                            
+
+                        </div>
+                        <div class="sellAccordion">
+                            <div class="progressLine">
+                                <div class="progressRed"></div>
+                            </div>
+                            <div class="sellAccTop SF-bold">
+                                Синхронизация с Google Sheets
+                                <div class="sircle"><div class="down-arrow"></div></div>
+                            </div>
+                            <div class="sellAccBot SF-reg">
+                                Готовые решения интеграции с Kaspi: от загрузки товаров и синхронизации каталога до выставления счетов и оплаты через QR-код — всё для удобства ваших клиентов и роста продаж
+                            </div>
+                            
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cont">
+                <div class="answers">
+                    <div class="answersText">
+                        <div class="topMainText SF-Sbold " style="font-size: 48px;">Ответы на вопросы</div>
+                        <div class="mainTextSmall SF-reg " style="margin-bottom: 30px;">
+                            Готовые решения интеграции с Kaspi: от загрузки товаров и синхронизации каталога до выставления счетов и оплаты через QR-код — всё для удобства ваших клиентов и роста продаж
+                        </div>
+                        <div class="redButton SF-light">Получить консультацию</div>
+                    </div>
+                    <div class="answersAccordion">
+                        <div class="sellAccordion color-none answerAccordionCont">
+                            
+                            <div class="sellAccTop SF-Sbold">
+                                Как осуществляется интеграция?
+                                <div class="sircle"><div class="down-arrow"></div></div>
+                            </div>
+                            <div class="sellAccBot SF-reg">
+                                Ваш сайт и Kaspi работают синхронно, что позволяет охватить больше клиентов и увеличить конверсию.
+                            </div>
+                            
+
+                        </div>
+                        <div class="sellAccordion color-none answerAccordionCont">
+                            
+                            <div class="sellAccTop SF-Sbold">
+                                Как осуществляется интеграция?
+                                <div class="sircle"><div class="down-arrow"></div></div>
+                            </div>
+                            <div class="sellAccBot SF-reg">
+                                Ваш сайт и Kaspi работают синхронно, что позволяет охватить больше клиентов и увеличить конверсию.
+                            </div>
+                            
+
+                        </div>
+                        <div class="sellAccordion color-none answerAccordionCont">
+                            
+                            <div class="sellAccTop SF-Sbold">
+                                Как осуществляется интеграция?
+                                <div class="sircle"><div class="down-arrow"></div></div>
+                            </div>
+                            <div class="sellAccBot SF-reg">
+                                Ваш сайт и Kaspi работают синхронно, что позволяет охватить больше клиентов и увеличить конверсию.
+                            </div>
+                            
+
+                        </div>
+                        <div class="sellAccordion color-none answerAccordionCont">
+                            
+                            <div class="sellAccTop SF-Sbold">
+                                Как осуществляется интеграция?
+                                <div class="sircle"><div class="down-arrow"></div></div>
+                            </div>
+                            <div class="sellAccBot SF-reg">
+                                Ваш сайт и Kaspi работают синхронно, что позволяет охватить больше клиентов и увеличить конверсию.
+                            </div>
+                            
+
+                        </div>
+                        <div class="sellAccordion color-none answerAccordionCont">
+                            
+                            <div class="sellAccTop SF-Sbold">
+                                Как осуществляется интеграция?
+                                <div class="sircle"><div class="down-arrow"></div></div>
+                            </div>
+                            <div class="sellAccBot SF-reg">
+                                Ваш сайт и Kaspi работают синхронно, что позволяет охватить больше клиентов и увеличить конверсию.
+                            </div>
+                            
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cont">
+                <div class="topMainText SF-Sbold center" >
+                    Консультация от специалиста
+                </div>
+                <div class="mainTextSmall SF-reg center">
+                    Оставьте заявку и получите качественную и подробную консультацию по интересующему Вас продукту, наши менеджеры с радостью расскажут о всех выгодах и преимуществах   
+                </div>
+                <form class="form-wrapper " onsubmit="return false;" style="margin: auto; margin-top:30px; margin-bottom: 10px;">
+                    <input type="tel" class="phone SF-reg" maxlength="18">
+                    <button type="submit" class="tel-button SF-reg">Получить консультацию</button>
+                </form>
+                <div class="topMainTextVerySmall SF-light center" style="width:532px; margin: auto;">
+                    Нажимая кнопку «Получить консультацию» Вы соглашаетесь с политикой обработки персональных данных и правилами компании
+                </div>
+            </div>
+            <div class="cont">
+                <div class="topMainText SF-Sbold center " style="font-size: 48px;" >
+                    Мы умеем не только интегрировать Kaspi
+                </div>
+                <div class="company">
+                    <div class="companyItem">
+                        <div class="cItemNumber SF-bold">.01</div>
+                        <img src="./img/bitrix.png" alt="" class="cItemImg">
+                        <div class="cItemh1 SF-Sbold">
+                            Интеграция 1С Битрикс
+                        </div> 
+                        <ul class="cItemul SF-reg">
+                            <li>Подгрузка остатков товаров на сладах.</li>
+                            <li>Подгрузка остатков товаров на сладах.</li>
+                            <li>Подгрузка остатков товаров на сладах.</li>
+                            <li>Подгрузка остатков товаров на сладах.</li>
+                        </ul>
+                    </div>
+                    <div class="companyItem">
+                        <div class="cItemNumber SF-bold">.02</div>
+                        <img src="./img/amo.png" alt="" class="cItemImg">
+                        <div class="cItemh1 SF-Sbold">
+                            Интеграция amoCRM 
+                       </div> 
+                        <ul class="cItemul SF-reg">
+                            <li>Подгрузка остатков товаров на сладах.</li>
+                            <li>Подгрузка остатков товаров на сладах.</li>
+                            <li>Подгрузка остатков товаров на сладах.</li>
+                            <li>Подгрузка остатков товаров на сладах.</li>
+                        </ul>
+                    </div>
+                    <div class="companyItem">
+                        <div class="cItemNumber SF-bold">.03</div>
+                        <img src="./img/b24.png" alt="" class="cItemImg">
+                        <div class="cItemh1 SF-Sbold">
+                            Битрикс24
+                        </div> 
+                        <ul class="cItemul SF-reg">
+                            <li>Подгрузка остатков товаров на сладах.</li>
+                            <li>Подгрузка остатков товаров на сладах.</li>
+                            <li>Подгрузка остатков товаров на сладах.</li>
+                            <li>Подгрузка остатков товаров на сладах.</li>
+                        </ul>
+                    </div>
+                    <div class="companyItem">
+                        <div class="cItemNumber SF-bold">.04</div>
+                        <img src="./img/profit.png" alt="" class="cItemImg">
+                        <div class="cItemh1 SF-Sbold">
+                            Profitbase
+                        </div> 
+                        <ul class="cItemul SF-reg">
+                            <li>Подгрузка остатков товаров на сладах.</li>
+                            <li>Подгрузка остатков товаров на сладах.</li>
+                            <li>Подгрузка остатков товаров на сладах.</li>
+                            <li>Подгрузка остатков товаров на сладах.</li>
+                        </ul>
+                    </div>
+                    <div class="companyItem">
+                        <div class="cItemNumber SF-bold">.05</div>
+                        <img src="./img/c1.png" alt="" class="cItemImg">
+                        <div class="cItemh1 SF-Sbold">
+                            Интеграция 1С Бухгалтерия
+                        </div> 
+                        <ul class="cItemul SF-reg">
+                            <li>Подгрузка остатков товаров на сладах.</li>
+                            <li>Подгрузка остатков товаров на сладах.</li>
+                            <li>Подгрузка остатков товаров на сладах.</li>
+                            <li>Подгрузка остатков товаров на сладах.</li>
+                        </ul>
+                    </div>
+                    <div class="companyItem">
+                        <div class="cItemNumber SF-bold">.06</div>
+                        <img src="./img/mySklad.png" alt="" class="cItemImg">
+                        <div class="cItemh1 SF-Sbold">
+                            Интеграция Мой Склад
+                        </div> 
+                        <ul class="cItemul SF-reg">
+                            <li>Подгрузка остатков товаров на сладах.</li>
+                            <li>Подгрузка остатков товаров на сладах.</li>
+                            <li>Подгрузка остатков товаров на сладах.</li>
+                            <li>Подгрузка остатков товаров на сладах.</li>
+                        </ul>
+                    </div>
+                    <div class="companyItem">
+                        <div class="cItemNumber SF-bold">.07</div>
+                        <img src="./img/exel.png" alt="" class="cItemImg">
+                        <div class="cItemh1 SF-Sbold">
+                            Profitbase
+                        </div> 
+                        <ul class="cItemul SF-reg">
+                            <li>Подгрузка остатков товаров на сладах.</li>
+                            <li>Подгрузка остатков товаров на сладах.</li>
+                            <li>Подгрузка остатков товаров на сладах.</li>
+                            <li>Подгрузка остатков товаров на сладах.</li>
+                        </ul>
+                    </div>
+                    <div class="companyItem">
+                        <div class="cItemNumber SF-bold">.08</div>
+                        <img src="./img/bitrix.png" alt="" class="cItemImg">
+                        <div class="cItemh1 SF-Sbold">
+                            Интеграция 1С Бухгалтерия
+                        </div> 
+                        <ul class="cItemul SF-reg">
+                            <li>Подгрузка остатков товаров на сладах.</li>
+                            <li>Подгрузка остатков товаров на сладах.</li>
+                            <li>Подгрузка остатков товаров на сладах.</li>
+                            <li>Подгрузка остатков товаров на сладах.</li>
+                        </ul>
+                    </div>
+                    <div class="companyItem">
+                        <div class="cItemNumber SF-bold">.09</div>
+                        <img src="./img/amo.png" alt="" class="cItemImg">
+                        <div class="cItemh1 SF-Sbold">
+                            Интеграция Мой Склад
+                        </div> 
+                        <ul class="cItemul SF-reg">
+                            <li>Подгрузка остатков товаров на сладах.</li>
+                            <li>Подгрузка остатков товаров на сладах.</li>
+                            <li>Подгрузка остатков товаров на сладах.</li>
+                            <li>Подгрузка остатков товаров на сладах.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="cont lastCont">
+                <div class="block360 b360_1">
+                    <div class="b360_1Block"></div>
+                    <div class="b360_1h1 SF-bold">Являемся официальными партнерами</div>
+                    <div class="b360_1p SF-light">Мы всегда развиваемся и сотрудничаем с лидерами IT индустрии. Ежегодно проходим тестирование и обновляем выданные нам сертификаты.</div>
+                </div>
+                <div class="block360 b360_2"></div>
+                <div class="block360 b360_3"></div>
+            </div>
+            
+        </div>
+        <div class="cont footer">
+            <div class="footerCont">
+                <div class="Voxel SF-light">© Digital agency «Voxel» 2012 - 2025</div>
+                <div class="Voxel SF-light">Не является публичной офертой</div>
+                <div class="socSeti">
+                    <a href="#">
+                            <svg width="23" height="24" viewBox="0 0 23 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_27_2263)">
+                                <path d="M21.7028 5.46512C21.1046 6.34012 20.3814 7.08566 19.5332 7.70173C19.5421 7.82673 19.5466 8.01423 19.5466 8.26423C19.5466 9.42494 19.377 10.5834 19.0377 11.7397C18.6984 12.8959 18.1828 14.0053 17.4908 15.0678C16.7988 16.1303 15.9752 17.07 15.0198 17.887C14.0645 18.704 12.9127 19.3557 11.5645 19.8424C10.2162 20.329 8.77427 20.5723 7.23856 20.5723C4.81892 20.5723 2.60463 19.9249 0.595703 18.6303C0.908203 18.666 1.25642 18.6839 1.64035 18.6839C3.64927 18.6839 5.43945 18.0678 7.01088 16.8357C6.07338 16.8178 5.2341 16.5299 4.49302 15.9718C3.75195 15.4138 3.24302 14.7017 2.96624 13.8357C3.26088 13.8803 3.5332 13.9026 3.7832 13.9026C4.16713 13.9026 4.5466 13.8535 4.9216 13.7553C3.9216 13.5499 3.09347 13.0522 2.43722 12.262C1.78097 11.4718 1.45285 10.5544 1.45285 9.50977V9.45619C2.05999 9.79548 2.71177 9.97852 3.4082 10.0053C2.81892 9.61244 2.35017 9.09905 2.00195 8.46512C1.65374 7.83119 1.47963 7.14369 1.47963 6.40262C1.47963 5.61691 1.67606 4.88923 2.06892 4.21959C3.14927 5.54994 4.46401 6.61468 6.01311 7.41378C7.56222 8.21289 9.2207 8.65709 10.9886 8.74637C10.9171 8.40709 10.8814 8.07673 10.8814 7.7553C10.8814 6.55887 11.3033 5.53878 12.147 4.69503C12.9908 3.85128 14.0109 3.42941 15.2073 3.42941C16.4573 3.42941 17.5109 3.88477 18.368 4.79548C19.3412 4.60798 20.2564 4.25977 21.1136 3.75084C20.7832 4.77762 20.1493 5.57227 19.2118 6.13477C20.0421 6.04548 20.8725 5.82227 21.7028 5.46512Z" fill="#D4D4D4"/>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_27_2263">
+                                    <rect width="22.3" height="24" fill="white" transform="matrix(1 0 0 -1 0 24)"/>
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </a>
+                    <a href="#" style="margin-top: 5px;">
+                        <svg width="28" height="36" viewBox="0 0 28 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_27_2265)">
+                                <path d="M24.7468 7.53962H17.9056V9.20033H24.7468V7.53962ZM21.3731 13.245C20.5698 13.245 19.9182 13.4794 19.4184 13.9481C18.9186 14.4169 18.6419 15.053 18.5884 15.8566H24.0507C23.89 14.1155 22.9975 13.245 21.3731 13.245ZM21.5873 21.0798C22.1496 21.0798 22.694 20.9369 23.2206 20.6512C23.7472 20.3655 24.0864 19.9771 24.2381 19.486H27.1968C26.3043 22.2271 24.3988 23.5977 21.4802 23.5977C19.5702 23.5977 18.0506 23.0084 16.9216 21.8298C15.7925 20.6512 15.228 19.1021 15.228 17.1825C15.228 15.3253 15.8104 13.7829 16.9751 12.5552C18.1399 11.3276 19.6416 10.7137 21.4802 10.7137C22.7119 10.7137 23.7851 11.0173 24.7 11.6244C25.6148 12.2316 26.2976 13.0307 26.7483 14.0218C27.1991 15.0128 27.4244 16.12 27.4244 17.3432C27.4244 17.495 27.4155 17.7048 27.3977 17.9727H18.5884C18.5884 18.9637 18.845 19.7294 19.3582 20.2695C19.8714 20.8097 20.6144 21.0798 21.5873 21.0798ZM3.71433 20.4102H7.67717C9.50686 20.4102 10.4217 19.6646 10.4217 18.1735C10.4217 16.5664 9.53364 15.7628 7.7575 15.7628H3.71433V20.4102ZM3.71433 13.2182H7.47635C8.17252 13.2182 8.72366 13.0552 9.12977 12.7294C9.53587 12.4035 9.73892 11.8968 9.73892 11.2093C9.73892 9.92355 8.89101 9.28069 7.1952 9.28069H3.71433V13.2182ZM0.00585938 6.40123H7.95832C8.73482 6.40123 9.42653 6.46373 10.0335 6.58873C10.6404 6.71373 11.2049 6.92578 11.727 7.22489C12.2492 7.52399 12.6508 7.9548 12.932 8.5173C13.2131 9.0798 13.3537 9.7673 13.3537 10.5798C13.3537 12.1959 12.5861 13.37 11.0509 14.1021C12.0684 14.3878 12.836 14.9012 13.3537 15.6423C13.8713 16.3834 14.1302 17.2941 14.1302 18.3744C14.1302 19.0441 14.0208 19.6535 13.8022 20.2026C13.5835 20.7517 13.289 21.2137 12.9186 21.5887C12.5482 21.9637 12.1086 22.2807 11.5998 22.5396C11.0911 22.7985 10.5511 22.986 9.9799 23.1021C9.40868 23.2182 8.81069 23.2762 8.18591 23.2762H0.00585938V6.40123Z" fill="#D4D4D4"/>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_27_2265">
+                                    <rect width="27.43" height="24" fill="white" transform="matrix(1 0 0 -1 0 27)"/>
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </a>
+                    <a href="#" style="margin-top: 5px;">
+                        <svg width="14" height="36" viewBox="0 0 14 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_27_2268)">
+                                <path d="M12.8468 3.16016V6.69587H10.7441C9.97628 6.69587 9.45843 6.85658 9.19057 7.17801C8.92271 7.49944 8.78878 7.98158 8.78878 8.62444V11.1557H12.7129L12.1906 15.12H8.78878V25.2852H4.69057V15.12H1.27539V11.1557H4.69057V8.23605C4.69057 6.57533 5.15486 5.28739 6.08343 4.37221C7.012 3.45703 8.2486 2.99944 9.79325 2.99944C11.1057 2.99944 12.1236 3.05301 12.8468 3.16016Z" fill="#D4D4D4"/>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_27_2268">
+                                    <rect width="13.72" height="24" fill="white" transform="matrix(1 0 0 -1 0 27)"/>
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </a>
+                    <a href="#" style="margin-top: 5px;">
+                        <svg width="21" height="36" viewBox="0 0 21 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_27_2271)">
+                            <path d="M12.7137 17.4235C12.7137 17.4235 12.8811 17.2561 13.216 16.9213C13.5508 16.5865 13.7182 15.9459 13.7182 14.9994C13.7182 14.053 13.3834 13.245 12.7137 12.5753C12.0441 11.9057 11.236 11.5709 10.2896 11.5709C9.34319 11.5709 8.53516 11.9057 7.86551 12.5753C7.19587 13.245 6.86105 14.053 6.86105 14.9994C6.86105 15.9459 7.19587 16.7539 7.86551 17.4235C8.53516 18.0932 9.34319 18.428 10.2896 18.428C11.236 18.428 12.0441 18.0932 12.7137 17.4235ZM14.0262 11.2628C14.0262 11.2628 14.2829 11.5195 14.7963 12.0329C15.3097 12.5463 15.5664 13.5352 15.5664 14.9994C15.5664 16.4637 15.053 17.7093 14.0262 18.736C12.9994 19.7628 11.7539 20.2762 10.2896 20.2762C8.82533 20.2762 7.5798 19.7628 6.55301 18.736C5.52623 17.7093 5.01284 16.4637 5.01284 14.9994C5.01284 13.5352 5.52623 12.2896 6.55301 11.2628C7.5798 10.236 8.82533 9.72266 10.2896 9.72266C11.7539 9.72266 12.9994 10.236 14.0262 11.2628ZM16.6512 8.63783C16.6512 8.63783 16.7115 8.6981 16.832 8.81864C16.9526 8.93917 17.0128 9.16908 17.0128 9.50837C17.0128 9.84766 16.8923 10.1378 16.6512 10.3789C16.4102 10.62 16.12 10.7405 15.7807 10.7405C15.4414 10.7405 15.1512 10.62 14.9102 10.3789C14.6691 10.1378 14.5485 9.84766 14.5485 9.50837C14.5485 9.16908 14.6691 8.87891 14.9102 8.63783C15.1512 8.39676 15.4414 8.27623 15.7807 8.27623C16.12 8.27623 16.4102 8.39676 16.6512 8.63783ZM11.3142 6.55524C11.3142 6.55524 11.159 6.55636 10.8488 6.55859C10.5385 6.56083 10.3521 6.56194 10.2896 6.56194C10.2271 6.56194 9.8856 6.55971 9.26507 6.55524C8.64453 6.55078 8.17355 6.55078 7.85212 6.55524C7.53069 6.55971 7.09989 6.5731 6.55971 6.59542C6.01953 6.61774 5.55971 6.66239 5.18025 6.72935C4.80078 6.79632 4.48159 6.87891 4.22266 6.97712C3.77623 7.15569 3.38337 7.41462 3.04408 7.75391C2.7048 8.09319 2.44587 8.48605 2.2673 8.93248C2.16908 9.19141 2.0865 9.5106 2.01953 9.89007C1.95257 10.2695 1.90792 10.7294 1.8856 11.2695C1.86328 11.8097 1.84989 12.2405 1.84542 12.5619C1.84096 12.8834 1.84096 13.3544 1.84542 13.9749C1.84989 14.5954 1.85212 14.9369 1.85212 14.9994C1.85212 15.0619 1.84989 15.4035 1.84542 16.024C1.84096 16.6445 1.84096 17.1155 1.84542 17.4369C1.84989 17.7584 1.86328 18.1892 1.8856 18.7294C1.90792 19.2695 1.95257 19.7294 2.01953 20.1088C2.0865 20.4883 2.16908 20.8075 2.2673 21.0664C2.44587 21.5128 2.7048 21.9057 3.04408 22.245C3.38337 22.5843 3.77623 22.8432 4.22266 23.0218C4.48159 23.12 4.80078 23.2026 5.18025 23.2695C5.55971 23.3365 6.01953 23.3811 6.55971 23.4035C7.09989 23.4258 7.53069 23.4392 7.85212 23.4436C8.17355 23.4481 8.64453 23.4481 9.26507 23.4436C9.8856 23.4392 10.2271 23.4369 10.2896 23.4369C10.3521 23.4369 10.6936 23.4392 11.3142 23.4436C11.9347 23.4481 12.4057 23.4481 12.7271 23.4436C13.0485 23.4392 13.4794 23.4258 14.0195 23.4035C14.5597 23.3811 15.0195 23.3365 15.399 23.2695C15.7785 23.2026 16.0977 23.12 16.3566 23.0218C16.803 22.8432 17.1959 22.5843 17.5352 22.245C17.8744 21.9057 18.1334 21.5128 18.3119 21.0664C18.4102 20.8075 18.4927 20.4883 18.5597 20.1088C18.6267 19.7294 18.6713 19.2695 18.6936 18.7294C18.716 18.1892 18.7294 17.7584 18.7338 17.4369C18.7383 17.1155 18.7383 16.6445 18.7338 16.024C18.7294 15.4035 18.7271 15.0619 18.7271 14.9994C18.7271 14.9369 18.7294 14.5954 18.7338 13.9749C18.7383 13.3544 18.7383 12.8834 18.7338 12.5619C18.7294 12.2405 18.716 11.8097 18.6936 11.2695C18.6713 10.7294 18.6267 10.2695 18.5597 9.89007C18.4927 9.5106 18.4102 9.19141 18.3119 8.93248C18.1334 8.48605 17.8744 8.09319 17.5352 7.75391C17.1959 7.41462 16.803 7.15569 16.3566 6.97712C16.0977 6.87891 15.7785 6.79632 15.399 6.72935C15.0195 6.66239 14.5597 6.61774 14.0195 6.59542C13.4794 6.5731 13.0485 6.55971 12.7271 6.55524C12.4057 6.55078 11.9347 6.55078 11.3142 6.55524ZM20.5084 10.7539C20.553 11.5396 20.5753 12.9548 20.5753 14.9994C20.5753 17.0441 20.553 18.4593 20.5084 19.245C20.4191 21.1021 19.8655 22.5396 18.8477 23.5575C17.8298 24.5753 16.3923 25.1289 14.5352 25.2182C13.7494 25.2628 12.3343 25.2852 10.2896 25.2852C8.24498 25.2852 6.8298 25.2628 6.04409 25.2182C4.18694 25.1289 2.74944 24.5753 1.73158 23.5575C0.713728 22.5396 0.160156 21.1021 0.0708705 19.245C0.0262277 18.4593 0.00390625 17.0441 0.00390625 14.9994C0.00390625 12.9548 0.0262277 11.5396 0.0708705 10.7539C0.160156 8.89676 0.713728 7.45926 1.73158 6.44141C2.74944 5.42355 4.18694 4.86998 6.04409 4.78069C6.8298 4.73605 8.24498 4.71373 10.2896 4.71373C12.3343 4.71373 13.7494 4.73605 14.5352 4.78069C16.3923 4.86998 17.8298 5.42355 18.8477 6.44141C19.8655 7.45926 20.4191 8.89676 20.5084 10.7539Z" fill="#D4D4D4"/>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_27_2271">
+                                    <rect width="20.58" height="24" fill="white" transform="matrix(1 0 0 -1 0 27)"/>
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </a>
+                    <a href="#" style="margin-top: 5px;">
+                        <svg width="26" height="36" viewBox="0 0 26 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_27_2274)">
+                            <path d="M25.6777 9.96401C25.8831 10.5354 25.2134 11.8479 23.6688 13.9015C23.4545 14.1872 23.1643 14.5667 22.7983 15.0399C22.4411 15.4953 22.1956 15.8167 22.0617 16.0042C21.9277 16.1917 21.7916 16.4127 21.6532 16.6671C21.5148 16.9216 21.4612 17.1091 21.4925 17.2296C21.5237 17.3502 21.5818 17.5042 21.6666 17.6917C21.7514 17.8792 21.8965 18.0711 22.1018 18.2676C22.3072 18.464 22.5617 18.7006 22.8652 18.9774C22.9009 18.9953 22.9233 19.0131 22.9322 19.031C24.1911 20.2006 25.0438 21.1872 25.4902 21.9908C25.517 22.0354 25.546 22.0912 25.5773 22.1582C25.6085 22.2252 25.6398 22.3435 25.671 22.5131C25.7023 22.6828 25.7001 22.8345 25.6643 22.9685C25.6286 23.1024 25.517 23.2252 25.3295 23.3368C25.142 23.4484 24.8786 23.5042 24.5393 23.5042L21.1108 23.5578C20.8965 23.6024 20.6465 23.5801 20.3608 23.4908C20.0751 23.4015 19.8429 23.3033 19.6643 23.1961L19.3965 23.0354C19.1286 22.8479 18.8161 22.5622 18.459 22.1783C18.1018 21.7944 17.796 21.4484 17.5416 21.1403C17.2871 20.8323 17.0148 20.5734 16.7246 20.3636C16.4344 20.1537 16.1822 20.0845 15.9679 20.156C15.9411 20.1649 15.9054 20.1805 15.8608 20.2028C15.8161 20.2252 15.7402 20.2899 15.6331 20.397C15.5259 20.5042 15.43 20.6359 15.3451 20.7921C15.2603 20.9484 15.1844 21.1805 15.1175 21.4886C15.0505 21.7966 15.0215 22.1426 15.0304 22.5265C15.0304 22.6604 15.0148 22.7832 14.9835 22.8948C14.9523 23.0064 14.9188 23.089 14.8831 23.1426L14.8295 23.2095C14.6688 23.3792 14.4322 23.4774 14.1197 23.5042H12.5795C11.9456 23.5399 11.2938 23.4662 10.6242 23.2832C9.95452 23.1002 9.36747 22.8636 8.863 22.5734C8.35854 22.2832 7.89872 21.9886 7.48354 21.6895C7.06836 21.3903 6.75363 21.1336 6.53934 20.9194L6.20452 20.5979C6.11523 20.5086 5.99247 20.3747 5.83622 20.1961C5.67997 20.0176 5.36077 19.6113 4.87863 18.9774C4.39648 18.3435 3.92327 17.6694 3.45898 16.9551C2.9947 16.2408 2.44782 15.2988 1.81836 14.1292C1.1889 12.9595 0.606306 11.7453 0.0705915 10.4863C0.0170201 10.3435 -0.00976562 10.2229 -0.00976562 10.1247C-0.00976562 10.0265 0.00362723 9.95508 0.0304129 9.91043L0.0839844 9.83008C0.217913 9.66044 0.472377 9.57561 0.847377 9.57561L4.51702 9.54883C4.62416 9.56669 4.72684 9.5957 4.82506 9.63588C4.92327 9.67606 4.9947 9.71401 5.03934 9.74972L5.10631 9.7899C5.24916 9.88811 5.35631 10.031 5.42773 10.2185C5.60631 10.6649 5.81166 11.127 6.04381 11.6046C6.27595 12.0823 6.45898 12.4461 6.59291 12.6961L6.8072 13.0845C7.06613 13.6203 7.31613 14.0845 7.5572 14.4774C7.79827 14.8703 8.01479 15.1761 8.20675 15.3948C8.39872 15.6136 8.58398 15.7854 8.76256 15.9104C8.94113 16.0354 9.09291 16.0979 9.21791 16.0979C9.34291 16.0979 9.46345 16.0756 9.57952 16.031C9.59738 16.022 9.6197 15.9997 9.64648 15.964C9.67327 15.9283 9.72684 15.8301 9.8072 15.6694C9.88756 15.5086 9.94782 15.2988 9.988 15.0399C10.0282 14.781 10.0706 14.4194 10.1152 13.9551C10.1599 13.4908 10.1599 12.9328 10.1152 12.281C10.0974 11.9238 10.0572 11.5979 9.9947 11.3033C9.9322 11.0086 9.8697 10.8033 9.8072 10.6872L9.72684 10.5265C9.50363 10.2229 9.12416 10.031 8.58845 9.95061C8.47238 9.93276 8.4947 9.82561 8.65541 9.62919C8.79827 9.45954 8.96791 9.32561 9.16434 9.2274C9.63756 8.99526 10.7045 8.88811 12.3652 8.90597C13.0974 8.9149 13.7001 8.97294 14.1733 9.08008C14.3518 9.12472 14.5014 9.18499 14.6219 9.26088C14.7425 9.33677 14.834 9.44392 14.8965 9.58231C14.959 9.7207 15.0059 9.86356 15.0371 10.0109C15.0684 10.1582 15.084 10.3613 15.084 10.6203C15.084 10.8792 15.0795 11.1247 15.0706 11.3569C15.0617 11.589 15.0505 11.9037 15.0371 12.3011C15.0237 12.6984 15.017 13.0667 15.017 13.406C15.017 13.5042 15.0126 13.6917 15.0036 13.9685C14.9947 14.2453 14.9925 14.4595 14.9969 14.6113C15.0014 14.7631 15.017 14.9439 15.0438 15.1537C15.0706 15.3636 15.1219 15.5377 15.1978 15.6761C15.2737 15.8145 15.3742 15.9238 15.4992 16.0042C15.5706 16.022 15.6465 16.0399 15.7268 16.0578C15.8072 16.0756 15.9233 16.0265 16.0751 15.9104C16.2268 15.7944 16.3965 15.6403 16.584 15.4484C16.7715 15.2564 17.0036 14.9573 17.2804 14.5511C17.5572 14.1448 17.8608 13.6649 18.1911 13.1113C18.7268 12.1828 19.2045 11.1783 19.6242 10.0979C19.6599 10.0086 19.7045 9.93052 19.7581 9.86356C19.8117 9.7966 19.8608 9.74972 19.9054 9.72294L19.959 9.68276C19.9768 9.67383 19.9992 9.66267 20.0259 9.64927C20.0527 9.63588 20.1108 9.62249 20.2001 9.6091C20.2893 9.5957 20.3786 9.59347 20.4679 9.6024L24.3251 9.57561C24.6733 9.53097 24.959 9.54213 25.1822 9.6091C25.4054 9.67606 25.5438 9.74972 25.5974 9.83008L25.6777 9.96401Z" fill="#D4D4D4"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_27_2274">
+                            <rect width="25.72" height="24" fill="white" transform="matrix(1 0 0 -1 0 27)"/>
+                            </clipPath>
+                            </defs>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/main.js"></script>
+</body>
+</html>
