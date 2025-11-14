@@ -1,4 +1,4 @@
-/* jQuery-версия упрощённого dropdown выбора города */
+
 $(function(){
     var $select = $('#citySelect');
     var $list = $select.find('.city-list');
@@ -37,19 +37,16 @@ $(function(){
 const $phone = $('.phone');
 const TEMPLATE = '7(_ _ _)_ _ _-_ _-_ _';
 
-// Показываем шаблон сразу при загрузке
 $phone.each(function(index,elem){
     $(elem).val(TEMPLATE);
 })
 
-// При фокусе — если в поле шаблон, очищаем под ввод
 $phone.on('focus', function(thsis) {
     if ($(this).val() === TEMPLATE) {
         $(this).val('7(');
     }
 });
 
-// При вводе — только цифры и форматирование
 $phone.on('input', function() {
     let digits = $(this).val().replace(/\D/g, '');
     if (digits.startsWith('7')) digits = digits.slice(1);
@@ -63,14 +60,12 @@ $phone.on('input', function() {
     $(this).val(formatted);
 });
 
-// Запрещаем ввод нецифровых символов
 $phone.on('keypress', function(e) {
 if (!/[0-9]/.test(e.key)) {
     e.preventDefault();
 }
 });
 
-// При потере фокуса — если нет цифр, возвращаем шаблон
 $phone.on('blur', function() {
 const digits = $(this).val().replace(/\D/g, '');
 if (digits.length < 2) {
@@ -83,43 +78,39 @@ if (digits.length < 2) {
 
 $(document).ready(function() {
 
-    // --- Функция для инициализации ОДНОЙ карусели ---
+
     function initCarousel(carouselId) {
-        // Используем переданный ID для выбора элементов внутри конкретной карусели
+        
+
         const $carousel = $(`#${carouselId}`);
         const $inner = $carousel.find('.carouselInner');
         const $items = $carousel.find('.carouselItem');
         const $indicators = $carousel.find('.indicator');
-        
-        // Получаем ширину *контейнера* карусели, а не одного элемента (для расчета смещения)
+
         const itemWidth = $carousel.width(); 
         const totalSlides = $items.length;
         let currentIndex = 0;
 
-        // Если слайдов нет, прекращаем инициализацию
+
         if (totalSlides === 0) {
             return;
         }
 
-        /**
-         * Обновляет активный индикатор и прокручивает карусель.
-         */
+
         function goToSlide(newIndex) {
-            // Проверка границ для циклической прокрутки
+
             if (newIndex >= totalSlides) {
                 newIndex = 0;
             } else if (newIndex < 0) {
                 newIndex = totalSlides - 1;
             }
-
+            console.log('ggg');
             const offset = -newIndex * itemWidth;
-            
-            // Используем .css() для изменения transform, полагаясь на CSS transition для анимации
+
             $inner.css('transform', `translateX(${offset}px)`);
             
             currentIndex = newIndex;
 
-            // Обновление индикаторов (смена src)
             $indicators.each(function(index, element) {
                 const $indicator = $(element);
                 const activeSrc = 'img/fittCircle.svg';
@@ -129,36 +120,31 @@ $(document).ready(function() {
             });
         }
 
-        // --- Обработчики событий (привязаны только к элементам внутри текущего $carousel) ---
-
-        // Клик по правой стрелке (Вперед)
         $carousel.find('.strelkaRight').on('click', function() {
             goToSlide(currentIndex + 1);
         });
 
-        // Клик по левой стрелке (Назад)
         $carousel.find('.strelkaLeft').on('click', function() {
             goToSlide(currentIndex - 1);
         });
         
-        // Клик по индикаторам
+
         $indicators.on('click', function() {
             const slideTo = $(this).data('slide-to');
             goToSlide(slideTo);
         });
         
-        // Инициализация: убедиться, что первый слайд активен
+
         goToSlide(0); 
     }
 
-    // --- ИНИЦИАЛИЗАЦИЯ ВСЕХ КАЧЕЛЕЙ ---
-    // Вызовите функцию для каждого уникального ID карусели на странице
+
     initCarousel('carousel-1');
     initCarousel('carousel-2');
     initCarousel('carousel-3');
     initCarousel('carousel-4');
     initCarousel('carousel-5');
-    // initCarousel('carousel-3'); // Если добавите еще одну
+
 });
 
 $('.sellAccordion').on('click', function(){
@@ -299,3 +285,70 @@ $('.sellAccordion').on('click', function(){
     }
 });
  
+document.addEventListener('DOMContentLoaded', () => {
+
+    const matrixElements = document.querySelectorAll('.matrix');
+
+
+    const duration = 1.5; 
+    const easeType = "power1.inOut";
+    const floatAmount = 1800;
+    const rotationAmount = 1;
+
+    const animateElement = (element, delay) => {
+
+        const tl = gsap.timeline({
+            repeat: -1,
+            yoyo: true,
+            delay: delay 
+        });
+
+        tl.to(element, {
+            duration: duration,
+            ease: easeType,
+            x: () => 0.7 * floatAmount - floatAmount, 
+            y: () => 0.7 * floatAmount  - floatAmount,
+            rotation: () => 0.7 * rotationAmount  - rotationAmount, 
+            scale: 1.01, 
+        });
+    };
+
+    matrixElements.forEach((element, index) => {
+
+        animateElement(element, index * 0.5);
+    });
+
+    try{
+        if(typeof gsap !== 'undefined' && typeof ScrollTrigger !== 'undefined'){
+            gsap.registerPlugin(ScrollTrigger);
+
+            const leftBlocks = document.querySelectorAll('.blocksLeft .bloks');
+            const rightBlocks = document.querySelectorAll('.blocksRight .bloks');
+
+            const createParallax = (el, direction, index) => {
+                const distance = 800 + index * 18; 
+                const vertical = 1000 + index * 6; 
+
+                gsap.to(el, {
+                    x: direction === 'left' ? -distance : distance,
+                    y: direction === 'left' ? -vertical : vertical,
+                    rotation: (index % 2 === 0) ? -6 : 6,
+                    ease: 'none',
+                    scrollTrigger: {
+                        trigger: '.main',
+                        start: 'top bottom',
+                        end: 'bottom top',
+                        scrub: 0.6
+                    }
+                });
+            };
+
+            leftBlocks.forEach((el, i) => createParallax(el, 'left', i));
+            rightBlocks.forEach((el, i) => createParallax(el, 'right', i));
+
+        } 
+    }catch(e){
+        console.warn('Error initializing blocks scroll animations', e);
+    }
+
+});

@@ -393,4 +393,13 @@
     .footer{
         overflow: hidden;
     }
+    .blocksLeft{
+        display:none;
+    }
+    .blocksRight{
+        display: none;
+    }
+    .redButton{
+        margin-left: 0px;
+    }
 }

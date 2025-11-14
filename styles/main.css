@@ -108,7 +108,7 @@ body{
 }
 .c2{
     margin-left: 10px;
-
+    padding-right: 10px;
 }
 
 
@@ -184,6 +184,7 @@ body{
     width: 1140px;
     margin:104px auto;
     margin-bottom: 0px;
+    position: relative;
 }
 .topMain{
     display: flex;
@@ -928,9 +929,7 @@ input[type="tel"]::placeholder {
     left: 154px; 
     z-index: 98;
 }
-#circle1{
 
-}
 #strelkaVPravo{
     z-index: 10; 
     left: 105px; 
@@ -964,4 +963,156 @@ input[type="tel"]::placeholder {
 }
 .topMainText2{
     display: none;
+}
+.blocksLeft{
+    position: absolute;
+    left:-400px;
+    width:400px;
+}
+.bloks{
+    position: absolute;
+    width: 0px;
+    height:0px;
+}
+.block-left1{
+    width: 97px;
+    height: 94px;
+
+    left: 123.61px;
+    top: 20.72px;
+    filter: blur(5px);
+
+}
+.block-left2{
+    width: 200.55px;
+    height: 194.53px;
+    top: 700px;
+    left: 117px;
+    transform: matrix(-0.97, 0.26, 0.26, 0.97, 0, 0);
+
+}
+.block-left3{
+    width: 400.12px;
+    height: 388.12px;
+    left: -39px;
+    top: 1466px;
+
+    filter: blur(1px);
+    transform: matrix(-0.98, -0.2, -0.2, 0.98, 0, 0);
+}
+.block-left4{
+    width: 129.47px;
+    height: 125.59px;
+    left: 155px;
+    top: 2395px;
+
+    filter: blur(5px);
+    transform: rotate(13.63deg);
+
+    
+}
+.block-left5{
+    width: 97.04px;
+    height: 94.13px;
+    left: 303.61px;
+    top: 3102px;
+    filter: blur(5px);
+    transform: matrix(-1, 0.06, 0.06, 1, 0, 0);
+
+    
+}
+.block-left6{
+    width: 200.55px;
+    height: 194.53px;
+    left: 206px;
+    top: 3749.28px;
+
+    transform: matrix(-0.97, 0.26, 0.26, 0.97, 0, 0);
+
+
+    
+}
+.block-left7{
+    width: 400.12px;
+    height: 388.12px;
+    left: 39px;
+    top: 4347.28px;
+
+    filter: blur(1px);
+    border-radius: 0px;
+    transform: matrix(-0.98, -0.2, -0.2, 0.98, 0, 0);
+
+
+    
+}
+.block-left8{
+    width: 129.47px;
+    height: 125.59px;
+    left: 205px;
+    top: 5376.28px;
+
+    filter: blur(5px);
+    transform: rotate(13.63deg);
+
+
+    
+}
+.blocksRight{
+    position: absolute;
+    right: 0px;
+}
+.block-right1{
+    width: 393.82px;
+    height: 382.01px;
+    right: -415.82px;
+    top: 328px;
+    filter: blur(1px);
+    transform: rotate(15deg);
+}
+.block-right2{
+    width: 200.55px;
+    height: 194.53px;
+    right: -296.45px;
+    top: 1200px;
+    filter: blur(3px);
+    transform: rotate(-9.44deg);
+}
+.block-right3{
+    width: 400.12px;
+    height: 388.12px;
+    right: -330.49px;
+    top: 2310.99px;
+    filter: blur(1.3px);
+    border-radius: 0px;
+    transform: matrix(-0.99, -0.11, -0.11, 0.99, 0, 0);
+}
+.block-right4{
+    width: 291.77px;
+    height: 283.01px;
+    right: -142.23px;
+    top: 3466px;
+    filter: blur(1px);
+    transform: rotate(-2.57deg);
+}
+.block-right5{
+    width: 200.55px;
+    height: 194.53px;
+    right: -106.45px;
+    top: 4328.28px;
+    filter: blur(4px);
+    transform: rotate(-9.44deg);
+}
+.block-right6{
+    width: 400.12px;
+    height: 388.12px;
+    right: -273.12px;
+    top: 5277.28px;
+    filter: blur(1.3px);
+    transform: matrix(-0.98, -0.2, -0.2, 0.98, 0, 0);
+}
+.redButton{
+    margin-left: 20px;
+}
+.indicator{
+    user-select: none
 }
