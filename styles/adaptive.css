@@ -19,5 +19,378 @@
     .carousel{
         width: 100%;
     }
-    
+    #carousel-1{
+        display: none;
+    }
+    #carousel-2{
+        display: none;
+    }
+    #carousel-3{
+        display: none;
+    }
+    #carousel-4{
+        display: none;
+    }
+    #carousel-5{
+        display: flex;
+        height:auto;
+        flex-wrap: wrap;
+        
+    }
+    .carouselInner{
+        width: 100%;
+
+
+    }
+    .carouselItem > img{
+        width:100%;
+    }
+    .carouselItem {
+        width:100%;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+    }
+    .carouselItemInfo{
+        width:100%;
+    }
+    #steps{
+        width: 100%;
+    }
+    #mac{
+        width: 100%;
+    }
+    .lastCont{
+        flex-direction: column;
+    }
+    .sellPhone img{
+        width:100%;
+
+    }
+    .sellPhone{
+        width: 100%;
+    }
+    .sells{
+        flex-direction: column;
+    }
+    .city{
+        display: none;
+        overflow: hidden;
+    }
+    .c2{
+        display: none;
+    }
+    .topInfo{
+        width:min-content;
+        position:static;
+        overflow: hidden;
+    }
+    .menu{
+        background-color: transparent;
+        display: flex;
+        flex-direction: column;
+        width:25px;
+        gap:4px;
+        margin-top: 20px;
+        margin-right: 10px;
+    }
+    .logoText{
+        display: none;
+    }
+    .menuNoSpan{
+        display: none;
+        max-height:0px;
+    }
+    .menuSpan{
+        border:2px solid black;
+        display: inline-block;
+
+    }
+    .sellText{
+
+        width: 100%;
+    }
+    input[type="tel"] {
+        width: 95%;
+    }
+    .topMainLeft{
+        width: 100%;
+        padding: 30px;
+    }
+    .trio {
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+        margin-top: 50px;
+    }
+    .trioElem{
+        border-radius: 24px;
+    }
+    .cont{
+        padding: 10px;
+        margin-top: 100px;
+        width: 95%;
+    }
+    .contacts{
+        margin-right: 40px;
+    }
+    .topLineCont{
+        justify-content: space-between;
+    }
+    .answers{
+        flex-direction: column;
+    }
+    .answersAccordion{
+        width: 100%;
+    }
+    .topMainTextVerySmall{
+        width:100% !important;
+    }
+    .shop{
+        overflow: hidden;
+    }
+    .it2{
+        display: none;
+    }
+    .item{
+        width:90%;
+        height:fit-content;
+        padding-bottom: 10px;
+    }
+    .itemTrio{
+        height: fit-content;
+        justify-content: center;
+
+        margin-top: 5px;
+    }
+    .carouselDel{
+        display: none;
+    }
+    .block360{
+        width:100%;
+        height:340px;
+    }
+    .companyItem{
+        width: 100%;
+    }
+    .answersText{
+        width: 100%;
+    }
+    .contacts{
+        border: none;
+    }
+    .form-wrapper{
+        position: relative;
+        overflow: visible;
+        width: 100%;
+        margin-bottom: 100px;
+    }
+    .form-wrapper > input{
+        width:70%;
+        text-align: center;
+        
+    }
+    .form-wrapper > button{
+        position: absolute;
+        width: 100%;
+        top:80px;
+    }
+    .topMainText{
+        font-size: 32px;
+    }
+    .mainTextSmall{
+        padding-right: 10px;
+    }
+    .quartetElemRight{
+        width: 100%;
+        margin-top: 350px;
+        float: none;
+        
+    }
+    .quartetElem{
+        height: auto;
+        width: 83%;
+        padding:30px;
+    }
+    .quartetElemImg{
+        margin-left: 50px;
+        transform: scale(1);
+    }
+    .quartet{
+        justify-content: center;
+    }
+    .sellTexth1{
+        margin-left: 0px;
+        font-size: 28px;
+        line-height: 120%;
+        text-align:  center;
+    }
+    .sellPhone > img{
+        margin:auto;   
+        height:487px;
+    }
+    .quartetElemCont{
+        overflow: hidden;
+        position: absolute;
+        height:290px;
+        width:350px;
+        left: 15px;
+    }
+    .quartetElem4 > .quartetElemRight{
+        
+        margin-top: 350px;
+    }
+    #circle1{
+        width: 277px;
+        height: 277px;
+        left:-42px;
+    }
+    #strelkaVPravo{
+        width: 53px;
+        height: 40px;
+        left: 70px;
+    }
+    #laptop-mini1{
+        width: 450px;
+        height:300px;
+        left:-130px;
+    }
+    #phone-mini1{
+        width: 95px;
+        height: 200px;
+        top:20px;
+        left: 140px;
+    }
+    #circle2{
+        width: 300px;
+        height: 300px;
+        left: 27px;
+    }
+    #strelkaVNiz{
+        
+        width: 56px;
+        height: 42px;
+        left: 180px;
+        top: 80px;
+    }
+    #laptop-mini2{
+        width:410px;
+        height: 286px;
+        top: 83px;
+        left: 22px;
+    }
+    #phone-mini2{
+        width: 135px;
+        height: 274px;
+        top: 81px;
+        left: 27px;
+    }
+    #circle3{
+
+    }
+    .quartetElem1{
+        order:1;
+    }
+    .quartetElem2{
+        order:2;
+    }
+    .quartetElem3{
+        order:4;
+    }
+    .quartetElem4{
+        order:3;
+    }
+    #circle4{
+        width: 323px;
+        height: 323px;
+    }
+    #upPhone{
+        width: 336px;
+        height: 663px;
+        left:-5px;
+        top:20px;
+    }
+    .blurBox{
+        width: 276px;
+        height: 105px;
+        position:absolute;
+        top:215px;
+        left: 40px;
+    }
+    #circle3{
+        width: 286px;
+        height: 286px;
+        left: 35px;
+    }
+    #big-one-lap{
+        width: 548px;
+        height: 365px;
+        left:-95.5px;
+        top:0px;
+    }
+    .itemLaptopTool{
+        width: 98%;
+        height: 300px;
+    }
+    .buttonMore{
+        width: 95%;
+    }
+    .sellTextp{
+        font-size: 18px;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .redButton1{
+        display: none;
+    }
+    .redButton2{
+        display: block;
+        width: 82%;
+        font-size: 18px;
+        text-align: center;
+    }
+    .topMainText1{
+        display: none;
+    }
+    .topMainText2{
+        display: block;
+    }
+    .pripiska{
+        text-align: center;
+    }
+    .carouselItem{
+        height:1100px ;
+    }
+    .carouselItemInfo{
+        height: 670px;
+    }
+    .redButton-del{
+        display: none;
+    }
+    #form-bot{
+        margin-bottom: 100px !important;
+    }
+    .cItemNumber{
+        color: #F14635;
+        opacity: 1;
+    }
+    .b360_3{
+        margin-top:30px;
+    }
+    .b360_2{
+        margin-top:-40px;
+    }
+    .socSeti{
+        display: none;
+    }
+    .Voxel{
+        height: 20px;
+
+    }
+    .footerCont{
+        justify-content: center;
+    }
+    .footer{
+        overflow: hidden;
+    }
 }
